@@ -1,0 +1,133 @@
+.aboutpage-container {
+  height: 100%;
+  width: 100%;
+  // position: absolute;
+  // background-color: white;
+  // background-color: rgb(200, 255, 255);
+  // margin-top: -25px;
+  // padding: 100 px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .whoami {
+    width: 50%;
+    //height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: 3px solid black;
+    padding: 50px;
+    .profile-image {
+      padding: 10px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .profile-title {
+      padding: 10px;
+      font-size: 3em;
+    }
+    .profile-text {
+      text-align: justify;
+      padding: 10px;
+      font-size: 1.5em;
+    }
+  }
+
+  .skills {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .skills-title {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-size: 3em;
+    }
+    .security {
+      display: flex;
+      flex-direction: row;
+      padding: 50px;
+      .security-image {
+        height: 200px;
+        width: 200px;
+      }
+      .security-content {
+        // padding: 20px;
+        margin-left: 25px;
+        .security-title {
+          padding: 10px;
+          font-size: 2em;
+        }
+        .security-text {
+          text-align: justify;
+          font-size: 1.5em;
+          padding: 10px;
+        }
+      }
+    }
+    .ml {
+      display: flex;
+      flex-direction: row;
+      padding: 50px;
+      .ml-image {
+        width: 200px;
+        height: 200px;
+      }
+      .ml-content {
+        margin-right: 25px;
+        .ml-title {
+          padding: 10px;
+          font-size: 2em;
+        }
+        .ml-text {
+          text-align: justify;
+          font-size: 1.5em;
+          padding: 10px;
+        }
+      }
+    }
+    .software {
+      display: flex;
+      flex-direction: row;
+      padding: 50px;
+      .software-image {
+        width: 200px;
+        height: 200px;
+      }
+      .software-content {
+        margin-left: 25px;
+        .software-title {
+          padding: 10px;
+          font-size: 2em;
+        }
+        .software-text {
+          text-align: justify;
+          font-size: 1.5em;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  .movies {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .movies-image {
+      height: 200px;
+      width: 200px;
+    }
+    .movies-content {
+      .movies-title {
+      }
+      .movies-text {
+      }
+    }
+  }
+}
