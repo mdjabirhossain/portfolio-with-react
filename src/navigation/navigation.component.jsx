@@ -1,14 +1,28 @@
+import React from "react";
 import { Fragment } from "react";
 import { IconContext } from "react-icons";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaBars } from "react-icons/fa";
 import { Outlet, Link } from "react-router-dom";
-import "./navigation.styles.scss";
+import { DiCssdeck } from "react-icons/di";
+import {
+  Navigation,
+  NavigationContainer,
+  NavLogo,
+  Span,
+  MobileIcon,
+  NavItems,
+  NavLink,
+  ButtonContainer,
+  GitHubButton,
+} from "./navigation.styled.js";
 
-const Navigation = () => {
+const NavigationBar = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
   return (
     <>
-      <div className="navigation">
-        <div className="logos-container">
+      <Navigation>
+        <NavigationContainer>
+          {/* <div className="logos-container">
           <Link to="https://github.com/skywalker-alt327">
             <IconContext.Provider
               value={{ className: "logo-container", color: "#171515" }}
@@ -30,24 +44,53 @@ const Navigation = () => {
               <FaTwitter />
             </IconContext.Provider>
           </Link>
-        </div>
-        ;
-        <div className="nav-links-container">
-          <Link className="nav-link" to="/">
-            HOME
-          </Link>
-          <Link className="nav-link" to="/about">
-            ABOUT
-          </Link>
-          <Link className="nav-link" to="/projects">
-            PROJECTS
-          </Link>
-        </div>
-      </div>
+        </div> */}
+          <NavLogo to="/">
+            <a
+              style={{
+                display: "flex",
+                alignItems: "center",
+                color: "black",
+                marginBottom: "20;",
+                cursor: "pointer",
+              }}
+            >
+              <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+            </a>
+          </NavLogo>
+          <MobileIcon>
+            <FaBars
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            />
+          </MobileIcon>
+          <NavItems>
+            <NavLink to="/">HOME</NavLink>
+            <NavLink to="/about">ABOUT</NavLink>
+            <NavLink to="/projects">PROJECTS</NavLink>
+            <NavLink className="nav-link" to="/skills">
+              SKILLS
+            </NavLink>
+            <NavLink className="nav-link" to="/education">
+              EDUCATION
+            </NavLink>
+          </NavItems>
+          <ButtonContainer>
+            <GitHubButton to="https://github.com/skywalker-alt327">
+              <IconContext.Provider
+                value={{ className: "logo-container", color: "#171515" }}
+              >
+                <FaGithub />
+              </IconContext.Provider>
+            </GitHubButton>
+          </ButtonContainer>
+        </NavigationContainer>
+      </Navigation>
 
       <Outlet />
     </>
   );
 };
 
-export default Navigation;
+export default NavigationBar;

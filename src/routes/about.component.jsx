@@ -2,87 +2,62 @@ import aboutimg0 from "../images/maksimilen.jpeg";
 import securityImg from "../images/security-image.png";
 import mlImg from "../images/ml-image.jpeg";
 import softwareImg from "../images/software-image.jpeg";
+import AboutBgAnimation from "../components/aboutBgAnimation.component";
+import { Bio } from "../data/data";
+import Typewriter from "typewriter-effect";
 
-import "./about.styles.scss";
+import {
+  AboutContainer,
+  AboutBg,
+  AboutInnerContainer,
+  AboutLeftContainer,
+  AboutRightContainer,
+  Img,
+  Title,
+  TextLoop,
+  Span,
+  SubTitle,
+  ResumeButton,
+  SpacerTop,
+  SpacerBottom,
+} from "./about.styled.js";
 
 const About = () => {
   return (
-    <div className="aboutpage-container">
-      <div className="whoami">
-        <img src={aboutimg0} className="profile-image" />
-        <div className="profile-title">whoami</div>
-        <div className="profile-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          nisi risus, malesuada vel nibh sit amet, porttitor fringilla purus.
-          Nulla tristique enim pellentesque aliquam tristique.
-        </div>
-      </div>
-
-      <div className="skills">
-        <div className="skills-title">ls skills --verbose</div>
-        <div className="security">
-          <img src={securityImg} className="security-image" />
-          <div className="security-content">
-            <div className="security-title">Cybersecurity</div>
-            <div className="security-text">
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              nisi risus, malesuada vel nibh sit amet, porttitor fringilla
-              purus. Nulla tristique enim pellentesque aliquam tristique.
-              Curabitur ornare dui quis nisl interdum, non sagittis eros
-              porttitor. Curabitur ornare dui quis nisl interdum, non sagittis
-              eros porttitor. Ut id elit felis. Class aptent taciti sociosqu ad
-              litora torquent per conubia nostra, per inceptos himenaeos. Mauris
-              vel lectus sed nibh eleifend semper eget at leo. Donec varius
-              ligula a dapibus maximus. Phasellus eu commodo odio.
-            </div>
-          </div>
-        </div>
-        <div className="ml">
-          <div className="ml-content">
-            <div className="ml-title">ML</div>
-            <div className="ml-text">
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              nisi risus, malesuada vel nibh sit amet, porttitor fringilla
-              purus. Nulla tristique enim pellentesque aliquam tristique.
-              Curabitur ornare dui quis nisl interdum, non sagittis eros
-              porttitor. Curabitur ornare dui quis nisl interdum, non sagittis
-              eros porttitor. Ut id elit felis. Class aptent taciti sociosqu ad
-              litora torquent per conubia nostra, per inceptos himenaeos. Mauris
-              vel lectus sed nibh eleifend semper eget at leo. Donec varius
-              ligula a dapibus maximus. Phasellus eu commodo odio.
-            </div>
-          </div>
-          <img src={mlImg} className="ml-image" />
-        </div>
-        <div className="software">
-          <img src={softwareImg} className="software-image" />
-          <div className="software-content">
-            <div className="software-title">Software</div>
-            <div className="software-text">
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              nisi risus, malesuada vel nibh sit amet, porttitor fringilla
-              purus. Nulla tristique enim pellentesque aliquam tristique.
-              Curabitur ornare dui quis nisl interdum, non sagittis eros
-              porttitor. Curabitur ornare dui quis nisl interdum, non sagittis
-              eros porttitor. Ut id elit felis. Class aptent taciti sociosqu ad
-              litora torquent per conubia nostra, per inceptos himenaeos. Mauris
-              vel lectus sed nibh eleifend semper eget at leo. Donec varius
-              ligula a dapibus maximus. Phasellus eu commodo odio.
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <div className="movies">
-        <div className="movies-content">
-          <img src={aboutimg0} className="movies-image" />
-          <div className="movies-title">cat movies</div>
-          <div className="movies-text"></div>
-        </div>
-      </div> */}
-      {/* <div>cat books</div> */}
+    <div>
+      <SpacerTop />
+      <AboutContainer>
+        <AboutBg>
+          <AboutBgAnimation />
+        </AboutBg>
+        <AboutInnerContainer>
+          <AboutLeftContainer>
+            <Img src={mlImg} />
+          </AboutLeftContainer>
+          <AboutRightContainer>
+            <Title>
+              Hi, I am <br /> {Bio.name}
+            </Title>
+            <TextLoop>
+              I am a
+              <Span>
+                <Typewriter
+                  options={{
+                    strings: Bio.roles,
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </Span>
+            </TextLoop>
+            <SubTitle>{Bio.description}</SubTitle>
+            <ResumeButton href={Bio.resume} target="display">
+              Check Resume
+            </ResumeButton>
+          </AboutRightContainer>
+        </AboutInnerContainer>
+      </AboutContainer>
+      <SpacerBottom />
     </div>
   );
 };
