@@ -58,18 +58,34 @@ export const NavItems = styled.ul`
   @media screen and (max-width: 768px) {
     display: none;
   }
+  .nav-link {
+    font-weight: 500;
+    color: ${({ theme }) => theme.text_primary};
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    color: #00aaff;
+  }
+  // .nav-link: active {
+  //   border-bottom: 2px solid ${({ theme }) => theme.primary};
+  // }
 `;
 
 export const NavLink = styled(Link)`
-  color: ${({ theme }) => theme.text_primary};
+  // color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
+  color: ${({ theme }) => theme.text_primary};
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  :hover {
-    color: ${({ theme }) => theme.primary};
+  // :hover {
+  //   color: ${({ theme }) => "red"};
+  // }
+  &.hover {
+    color: "#00AAFF";
   }
-
   &.active {
     border-bottom: 2px solid ${({ theme }) => theme.primary};
   }
@@ -89,10 +105,6 @@ export const GitHubButton = styled(Link)`
   text-decoration: none;
   font-size: 16px;
   transition: all 0.6s ease-in-out;
-  :hover {
-    background: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
-  }
   @media screen and (max-width: 768px) {
     font-size: 14px;
   }
@@ -102,11 +114,16 @@ export const ButtonContainer = styled.div`
   width: 80%;
   height: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   padding: 0 6px;
   @media screen and (max-width: 768px) {
     display: none;
+  }
+  :hover {
+    background: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
+    transform: scale(1.05);
   }
 `;
 
@@ -215,5 +232,30 @@ export const MobileNavLogo = styled(Link)`
   text-decoration: none;
   @media (max-width: 640px) {
     padding: 0 0px;
+  }
+`;
+
+export const ButtonsContainer = styled.div`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align items: center;
+  // border: 1px solid white;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 125px;
+  margin-right: -100px;
+`;
+
+export const ButtonHover = styled.div`
+  :hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+
+export const StyledLink = styled.a`
+  color: white;
+  :hover {
+    color: red;
   }
 `;

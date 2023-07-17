@@ -16,7 +16,7 @@ import { skills } from "../data/data";
 const Skills = () => {
   return (
     <div>
-      <Container id="skills">
+      <Container>
         <Wrapper>
           {/* <Desc>
           Here are some of my skills on which I have been working on for the

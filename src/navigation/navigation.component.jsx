@@ -4,6 +4,7 @@ import { IconContext } from "react-icons";
 import { FaGithub, FaLinkedin, FaTwitter, FaBars } from "react-icons/fa";
 import { Outlet, Link } from "react-router-dom";
 import { DiCssdeck } from "react-icons/di";
+import { MdModeStandby } from "react-icons/md";
 import {
   Navigation,
   NavigationContainer,
@@ -14,7 +15,18 @@ import {
   NavLink,
   ButtonContainer,
   GitHubButton,
+  ButtonsContainer,
+  ButtonHover,
+  StyledLink,
 } from "./navigation.styled.js";
+import { Button } from "@mui/base";
+import "./button.styles.scss";
+
+const linkStyle = {
+  margin: "1rem",
+  textDecoration: "none",
+  color: "blue",
+};
 
 const NavigationBar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -45,17 +57,18 @@ const NavigationBar = () => {
             </IconContext.Provider>
           </Link>
         </div> */}
-          <NavLogo to="/">
+          <NavLogo to="/about">
             <a
               style={{
                 display: "flex",
                 alignItems: "center",
-                color: "black",
+                color: "white",
                 marginBottom: "20;",
                 cursor: "pointer",
               }}
             >
-              <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+              <MdModeStandby size="3rem" />
+              {/* <Span>Portfolio</Span> */}
             </a>
           </NavLogo>
           <MobileIcon>
@@ -66,25 +79,61 @@ const NavigationBar = () => {
             />
           </MobileIcon>
           <NavItems>
-            <NavLink to="/">HOME</NavLink>
-            <NavLink to="/about">ABOUT</NavLink>
-            <NavLink to="/projects">PROJECTS</NavLink>
-            <NavLink className="nav-link" to="/skills">
+            <Link className="nav-link" to="/">
+              HOME
+            </Link>
+            <Link className="nav-link" to="/about">
+              ABOUT
+            </Link>
+            <Link className="nav-link" to="/skills">
               SKILLS
-            </NavLink>
-            <NavLink className="nav-link" to="/education">
+            </Link>
+            <Link className="nav-link" to="/projects">
+              PROJECTS
+            </Link>
+            <Link className="nav-link" to="/education">
               EDUCATION
-            </NavLink>
+            </Link>
           </NavItems>
-          <ButtonContainer>
-            <GitHubButton to="https://github.com/skywalker-alt327">
-              <IconContext.Provider
-                value={{ className: "logo-container", color: "#171515" }}
-              >
-                <FaGithub />
-              </IconContext.Provider>
-            </GitHubButton>
-          </ButtonContainer>
+
+          <ButtonsContainer>
+            <ButtonContainer>
+              <GitHubButton to="https://github.com/skywalker-alt327">
+                <IconContext.Provider
+                  value={{
+                    color: "white",
+                    size: "22px",
+                  }}
+                >
+                  <FaGithub />
+                </IconContext.Provider>
+              </GitHubButton>
+            </ButtonContainer>
+            <ButtonContainer>
+              <GitHubButton to="https://github.com/skywalker-alt327">
+                <IconContext.Provider
+                  value={{
+                    color: "white",
+                    size: "22px",
+                  }}
+                >
+                  <FaLinkedin />
+                </IconContext.Provider>
+              </GitHubButton>
+            </ButtonContainer>
+            <ButtonContainer>
+              <GitHubButton to="https://github.com/skywalker-alt327">
+                <IconContext.Provider
+                  value={{
+                    color: "white",
+                    size: "20px",
+                  }}
+                >
+                  <FaTwitter />
+                </IconContext.Provider>
+              </GitHubButton>
+            </ButtonContainer>
+          </ButtonsContainer>
         </NavigationContainer>
       </Navigation>
 

@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 export const Container = styled.div`
+  // border: 1px solid white;
+  background: ${({ theme }) => "#121212"};
   height: 700px;
   display: flex;
   flex-direction: column;
@@ -59,8 +61,9 @@ export const SkillsContainer = styled.div`
 export const Skill = styled.div`
   width: 100%;
   max-width: 500px;
-  background: ${({ theme }) => theme.card};
-  border: 0.1px solid #854ce6;
+  background: ${({ theme }) => "#151515"};
+  // border: 0.1px solid #854ce6;
+  border: 0.1px solid #00aaff;
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
   padding: 18px 36px;
