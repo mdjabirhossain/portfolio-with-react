@@ -20,6 +20,7 @@ const Container = styled.div`
   @media (max-width: 960px) {
     padding: 0px;
   }
+  background: #161616;
 `;
 
 const Wrapper = styled.div`
@@ -76,13 +77,8 @@ const TimelineSection = styled.div`
 
 const Education = () => {
   return (
-    <Container id="education">
+    <Container>
       <Wrapper>
-        {/* <Title>Education</Title>
-        <Desc>
-          My education has been a journey of self-discovery and growth. My
-          educational details are as follows.
-        </Desc> */}
         <TimelineSection>
           <Timeline>
             {education.map((education, index) => (
@@ -91,9 +87,9 @@ const Education = () => {
                   <EducationCard education={education} />
                 </TimelineContent>
                 <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="secondary" />
+                  <TimelineDot variant="outlined" color="primary" />
                   {index !== experiences.length && (
-                    <TimelineConnector style={{ background: "#854CE6" }} />
+                    <TimelineConnector style={{ background: "#0088ff" }} />
                   )}
                 </TimelineSeparator>
               </TimelineItem>
