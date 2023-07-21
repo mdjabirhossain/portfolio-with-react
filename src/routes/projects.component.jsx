@@ -7,7 +7,9 @@ import {
   Desc,
   CardContainer,
   ToggleButtonGroup,
-  ToggleButton,
+  ToggleButtonLeft,
+  ToggleButtonMiddle,
+  ToggleButtonRight,
   Divider,
 } from "./projects.styled.js";
 import ProjectCard from "../components/projectCard/projectCard.component.jsx";
@@ -20,61 +22,68 @@ const Projects = ({ openModal, setOpenModal }) => {
       <Wrapper>
         <ToggleButtonGroup>
           {toggle === "all" ? (
-            <ToggleButton active value="all" onClick={() => setToggle("all")}>
+            <ToggleButtonLeft
+              active
+              value="all"
+              onClick={() => setToggle("all")}
+            >
               All
-            </ToggleButton>
+            </ToggleButtonLeft>
           ) : (
-            <ToggleButton value="all" onClick={() => setToggle("all")}>
+            <ToggleButtonLeft value="all" onClick={() => setToggle("all")}>
               All
-            </ToggleButton>
+            </ToggleButtonLeft>
           )}
           <Divider />
           {toggle === "web app" ? (
-            <ToggleButton
+            <ToggleButtonMiddle
               active
               value="web app"
               onClick={() => setToggle("web app")}
             >
               WEB APP'S
-            </ToggleButton>
+            </ToggleButtonMiddle>
           ) : (
-            <ToggleButton value="web app" onClick={() => setToggle("web app")}>
+            <ToggleButtonMiddle
+              value="web app"
+              onClick={() => setToggle("web app")}
+            >
               WEB APP'S
-            </ToggleButton>
+            </ToggleButtonMiddle>
           )}
           <Divider />
           {toggle === "android app" ? (
-            <ToggleButton
+            <ToggleButtonMiddle
               active
               value="android app"
               onClick={() => setToggle("android app")}
             >
               ANDROID APP'S
-            </ToggleButton>
+            </ToggleButtonMiddle>
           ) : (
-            <ToggleButton
+            <ToggleButtonMiddle
               value="android app"
               onClick={() => setToggle("android app")}
             >
               ANDROID APP'S
-            </ToggleButton>
+            </ToggleButtonMiddle>
           )}
           <Divider />
           {toggle === "machine learning" ? (
-            <ToggleButton
+            <ToggleButtonRight
               active
               value="machine learning"
               onClick={() => setToggle("machine learning")}
             >
               MACHINE LEARNING
-            </ToggleButton>
+            </ToggleButtonRight>
           ) : (
-            <ToggleButton
+            <ToggleButtonRight
               value="machine learning"
               onClick={() => setToggle("machine learning")}
             >
               MACHINE LEARNING
-            </ToggleButton>
+            </ToggleButtonRight>
           )}
         </ToggleButtonGroup>
         <CardContainer>
