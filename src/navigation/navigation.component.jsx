@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaBars } from "react-icons/fa";
 import { Outlet, Link } from "react-router-dom";
 import { DiCssdeck } from "react-icons/di";
 import { MdModeStandby } from "react-icons/md";
+import { Bio } from "../data/data.js";
 import {
   Navigation,
   NavigationContainer,
@@ -79,11 +80,14 @@ const NavigationBar = () => {
             />
           </MobileIcon>
           <NavItems>
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="/about">
               HOME
             </Link>
-            <Link className="nav-link" to="/about">
-              ABOUT
+            <Link className="nav-link" to="/education">
+              EDUCATION
+            </Link>
+            <Link className="nav-link" to="/experiences">
+              EXPERIENCES
             </Link>
             <Link className="nav-link" to="/skills">
               SKILLS
@@ -91,14 +95,11 @@ const NavigationBar = () => {
             <Link className="nav-link" to="/projects">
               PROJECTS
             </Link>
-            <Link className="nav-link" to="/education">
-              EDUCATION
-            </Link>
           </NavItems>
 
           <ButtonsContainer>
             <ButtonContainer>
-              <GitHubButton to="https://github.com/skywalker-alt327">
+              <GitHubButton to={Bio.github}>
                 <IconContext.Provider
                   value={{
                     color: "white",
@@ -110,7 +111,7 @@ const NavigationBar = () => {
               </GitHubButton>
             </ButtonContainer>
             <ButtonContainer>
-              <GitHubButton to="https://github.com/skywalker-alt327">
+              <GitHubButton to={Bio.linkedin}>
                 <IconContext.Provider
                   value={{
                     color: "white",
@@ -122,7 +123,7 @@ const NavigationBar = () => {
               </GitHubButton>
             </ButtonContainer>
             <ButtonContainer>
-              <GitHubButton to="https://github.com/skywalker-alt327">
+              <GitHubButton to={Bio.twitter}>
                 <IconContext.Provider
                   value={{
                     color: "white",

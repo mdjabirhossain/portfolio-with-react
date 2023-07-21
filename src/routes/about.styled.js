@@ -5,7 +5,11 @@ export const AboutContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
   justify-content: center;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   padding: 80px 30px;
   @media (max-width: 960px) {
     padding: 66px 16px;
@@ -20,16 +24,16 @@ export const AboutBg = styled.div`
   position: absolute;
   display: flex;
   justify-content: start;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  // right: 0;
+  // bottom: 0;
+  // top: 100px;
+  // left: 0;
   width: 100%;
   height: 100%;
   max-width: 1360px;
   overflow: hidden;
   padding: 0 30px;
-  top: 50%;
+  top: 65%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
@@ -151,7 +155,6 @@ export const Span = styled.span`
 
 export const SubTitle = styled.div`
   font-size: 20px;
-  font-family: Poppins;
   text-align: justify;
   line-height: 32px;
   margin-bottom: 42px;

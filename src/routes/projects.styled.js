@@ -8,11 +8,13 @@ export const Container = styled.div`
   //     rgba(132, 59, 206, 0.06) 5.71%,
   //     rgba(132, 59, 206, 0) 64.83%
   //   );
-  background: linear-gradient(
-    // 343.07deg,
-    rgba(0, 170, 255, 0.25) 5.71%,
-    rgba(0, 170, 255, 0.125) 64.83%
-  );
+  // background: linear-gradient(
+  //   343.07deg,
+  //   rgba(18, 18, 18, 1) 5.71%,
+  //   // rgba(0, 170, 255, 0.125) 64.83%
+  // );
+  background: linear-gradient(#121212, #191919);
+  // background: #121212;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,6 +104,7 @@ export const CardContainer = styled.div`
   align-items: center;
   gap: 28px;
   flex-wrap: wrap;
+  // border: 1px solid red;
   // display: grid;
   // grid-template-columns: repeat(3, 1fr);
   // grid-gap: 32px;

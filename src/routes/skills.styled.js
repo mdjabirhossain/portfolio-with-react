@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   // border: 1px solid white;
+  position: relative;
   background: ${({ theme }) => "#121212"};
-  height: 700px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,6 +16,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   position: relative;
+  border: 1px solid yellow;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,6 +54,8 @@ export const Desc = styled.div`
 export const SkillsContainer = styled.div`
   width: 100%;
   display: flex;
+  // border: 1px solid red;
+  padding: 20px;
   flex-wrap: wrap;
   margin-top: 30px;
   gap: 30px;
@@ -59,8 +63,10 @@ export const SkillsContainer = styled.div`
 `;
 
 export const Skill = styled.div`
-  width: 100%;
-  max-width: 500px;
+  // width: 100%;
+  // max-width: 500px;
+  max-width: 25%;
+  height: 350px;
   background: ${({ theme }) => "#151515"};
   // border: 0.1px solid #854ce6;
   border: 0.1px solid #00aaff;
@@ -74,6 +80,11 @@ export const Skill = styled.div`
   @media (max-width: 500px) {
     max-width: 330px;
     padding: 10px 36px;
+  }
+  &:hover {
+    background-color: #181818;
+    // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
   }
 `;
 

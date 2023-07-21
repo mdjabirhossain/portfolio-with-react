@@ -6,34 +6,36 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import SchoolIcon from "@mui/icons-material/School";
-import { education, experiences } from "../data/data";
-import EducationCard from "../components/educationCard/educationCard.component";
+import ExperienceCard from "../components/experienceCard/experienceCard.component";
+import { experiences } from "../data/data";
+import { FaBriefcase } from "react-icons/fa6";
 
 const Container = styled.div`
-  // border: 1px solid red;
+  background-color: #121212;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 0px 0px 60px 0px;
+  padding: 40px 0px 80px 0px;
   @media (max-width: 960px) {
     padding: 0px;
   }
-  background: #121212;
 `;
 
 const Wrapper = styled.div`
+  border: 1px solid red;
+  max-width: 10px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 100%;
   max-width: 1350px;
-  padding: 40px 0px 0px 0px;
+  padding: 80px 0;
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -65,6 +67,11 @@ const Desc = styled.div`
 
 const TimelineSection = styled.div`
   width: 100%;
+  // border: 1px solid red;
+  // border-radius: 25px;
+  // border: 0.2px solid #00aaff;
+  // background: #161616;
+  // box-shadow: rgba(23, 92, 230, 0.15) 4px 4px 4px;
   max-width: 1000px;
   margin-top: 10px;
   display: flex;
@@ -72,41 +79,38 @@ const TimelineSection = styled.div`
   align-items: center;
   justify-content: center;
   gap: 12px;
-  @media (max-width: 660px) {
-    align-items: end;
-  }
+  padding: 25px;
 `;
 
-const EducationCardContainer = styled.div`
-  background: 1px solid red;
-`;
-
-const Education = () => {
+const Experiences = () => {
   return (
-    <Container>
-      <Wrapper>
-        <TimelineSection>
-          <Timeline>
-            {education.map((education, index) => (
-              <TimelineItem>
-                <TimelineSeparator>
-                  <SchoolIcon variant="outlined" color="primary" />
-                  {index !== experiences.length && (
-                    <TimelineConnector
-                      style={{ background: "#0088ff", width: "1px" }}
-                    />
-                  )}
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <EducationCard education={education} />
-                </TimelineContent>
-              </TimelineItem>
-            ))}
-          </Timeline>
-        </TimelineSection>
-      </Wrapper>
+    <Container id="experience">
+      <TimelineSection>
+        <Timeline>
+          {experiences.map((experience, index) => (
+            <TimelineItem>
+              <TimelineSeparator>
+                <FaBriefcase variant="outlined" color="#0088ff" />
+                {index !== experiences.length && (
+                  <TimelineConnector
+                    style={{
+                      // background: "#00aaff",
+                      background: "#0088ff",
+                      width: "1px",
+                    }}
+                  />
+                )}
+                <div>Hello</div>
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <ExperienceCard experience={experience} />
+              </TimelineContent>
+            </TimelineItem>
+          ))}
+        </Timeline>
+      </TimelineSection>
     </Container>
   );
 };
 
-export default Education;
+export default Experiences;

@@ -5,6 +5,7 @@ import softwareImg from "../images/software-image.jpeg";
 import AboutBgAnimation from "../components/aboutBgAnimation.component";
 import { Bio } from "../data/data";
 import Typewriter from "typewriter-effect";
+import HeroImg from "../images/CB.jpeg";
 
 import {
   AboutContainer,
@@ -25,19 +26,16 @@ import {
 const About = () => {
   return (
     <div>
-      <SpacerTop />
       <AboutContainer>
         <AboutBg>
           <AboutBgAnimation />
         </AboutBg>
         <AboutInnerContainer>
           <AboutLeftContainer>
-            <Img src={mlImg} />
+            <Img src={HeroImg} />
           </AboutLeftContainer>
           <AboutRightContainer>
-            <Title>
-              Hi, I am <br /> {Bio.name}
-            </Title>
+            <Title>Hi, I am {Bio.name}</Title>
             <TextLoop>
               I am a
               <Span>

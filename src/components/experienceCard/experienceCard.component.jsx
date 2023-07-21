@@ -36,10 +36,10 @@ const Span = styled.span`
 const Card = styled.div`
   width: 650px;
   border-radius: 5px;
+  // box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  // box-shadow: rgba(0, 170, 255, 0.15) 0px 4px 24px;
   // padding: 12px 16px;
-  padding: 50px;
+  padding: 25px;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
@@ -48,9 +48,9 @@ const Card = styled.div`
   gap: 12px;
   transition: all 0.3s ease-in-out;
   &:hover {
-    background-color: #181818;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
+    background-color: #181818;
   }
   @media only screen and (max-width: 768px) {
     padding: 10px;
@@ -66,8 +66,9 @@ const Card = styled.div`
     overflow: visible;
     -webkit-line-clamp: unset;
   }
-  // border: 0.1px solid #854ce6;
-  // border: 1px solid #00aaff;
+
+  // border: 0.1px solid #306ee8;
+  // box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 `;
 
 const Top = styled.div`
@@ -92,19 +93,19 @@ const Body = styled.div`
   flex-direction: column;
 `;
 
-const Name = styled.div`
+const Role = styled.div`
   font-size: 18px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary + 99};
   @media only screen and (max-width: 768px) {
     font-size: 14px;
   }
 `;
 
-const Degree = styled.div`
+const Company = styled.div`
   font-size: 14px;
   font-weight: 500;
-  color: ${({ theme }) => theme.text_primary + 99};
+  color: ${({ theme }) => theme.text_secondary + 99};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
@@ -119,35 +120,62 @@ const Date = styled.div`
   }
 `;
 
-const Grade = styled.div`
-  font-size: 14px;
-  font-weight: 500;
-  color: ${({ theme }) => theme.text_secondary + 99};
+const Skills = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  margin-top: -10px;
+`;
+
+const ItemWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+`;
+
+const Skill = styled.div`
+  font-size: 15px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 99};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
 `;
 
-const EducationCard = ({ education }) => {
+const ExperienceCard = ({ experience }) => {
   return (
     <Card>
       <Top>
-        <Image src={education.img} />
+        <Image src={experience.img} />
         <Body>
-          <Name>{education.school}</Name>
-          <Degree>{education.degree}</Degree>
-          <Date>{education.date}</Date>
+          <Role>{experience.role}</Role>
+          <Company>{experience.company}</Company>
+          <Date>{experience.date}</Date>
         </Body>
       </Top>
-      <Grade>
-        <b>Grade: </b>
-        {education.grade}
-      </Grade>
       <Description>
-        <Span>{education.desc}</Span>
+        {experience?.desc && <Span>{experience?.desc}</Span>}
+        {experience?.skills && (
+          <>
+            <br />
+            <Skills>
+              <b>Skills:</b>
+              <ItemWrapper>
+                {experience?.skills?.map((skill, index) => (
+                  <Skill>• {skill}</Skill>
+                ))}
+              </ItemWrapper>
+            </Skills>
+          </>
+        )}
       </Description>
+      {experience.doc && (
+        <a href={experience.doc} target="new">
+          <Document src={experience.doc} />
+        </a>
+      )}
     </Card>
   );
 };
 
-export default EducationCard;
+export default ExperienceCard;

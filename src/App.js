@@ -8,6 +8,7 @@ import About from "./routes/about.component";
 import Projects from "./routes/projects.component";
 import Skills from "./routes/skills.component";
 import Education from "./routes/education.component";
+import Experiences from "./routes/experiences.component.jsx";
 import styled from "styled-components";
 
 const Body = styled.div`
@@ -37,7 +38,7 @@ const App = () => {
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Routes>
         <Route path="/" element={<NavigationBar />}>
-          <Route index element={<Home />} />
+          <Route index element={<About />} />
           <Route
             path="/about"
             element={
@@ -67,6 +68,14 @@ const App = () => {
             element={
               <Body>
                 <Education />
+              </Body>
+            }
+          />
+          <Route
+            path="/experiences"
+            element={
+              <Body>
+                <Experiences />
               </Body>
             }
           />
