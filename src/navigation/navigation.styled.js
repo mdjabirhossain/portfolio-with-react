@@ -18,6 +18,7 @@ export const Navigation = styled.div`
 `;
 
 export const NavigationContainer = styled.div`
+  margin-left: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
