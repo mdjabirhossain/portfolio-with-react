@@ -34,12 +34,14 @@ const Span = styled.span`
 `;
 
 const Card = styled.div`
-  width: 650px;
+  // border: 1px solid red;
+  width: 850px;
+  // width: 100%;
   border-radius: 5px;
   // box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   // padding: 12px 16px;
-  padding: 25px;
+  padding: 50px;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
@@ -105,7 +107,7 @@ const Role = styled.div`
 const Company = styled.div`
   font-size: 14px;
   font-weight: 500;
-  color: ${({ theme }) => theme.text_secondary + 99};
+  color: ${({ theme }) => theme.text_secondary};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
@@ -114,7 +116,7 @@ const Company = styled.div`
 const Date = styled.div`
   font-size: 12px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 80};
+  color: ${({ theme }) => theme.text_secondary};
   @media only screen and (max-width: 768px) {
     font-size: 10px;
   }

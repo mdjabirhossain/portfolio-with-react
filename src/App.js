@@ -34,6 +34,7 @@ const Wrapper = styled.div`
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Routes>
@@ -51,7 +52,7 @@ const App = () => {
             path="/projects"
             element={
               <Body>
-                <Projects />
+                <Projects openModal={openModal} setOpenModal={setOpenModal} />
               </Body>
             }
           />

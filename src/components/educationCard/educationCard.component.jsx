@@ -79,7 +79,7 @@ const Top = styled.div`
 const Image = styled.img`
   height: 50px;
   background-color: #000;
-  border-radius: 10px;
+  border-radius: 3px;
   margin-top: 4px;
   @media only screen and (max-width: 768px) {
     height: 40px;
@@ -113,7 +113,7 @@ const Degree = styled.div`
 const Date = styled.div`
   font-size: 12px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 80};
+  color: ${({ theme }) => theme.text_secondary};
   @media only screen and (max-width: 768px) {
     font-size: 10px;
   }
@@ -122,7 +122,7 @@ const Date = styled.div`
 const Grade = styled.div`
   font-size: 14px;
   font-weight: 500;
-  color: ${({ theme }) => theme.text_secondary + 99};
+  color: ${({ theme }) => theme.text_secondary};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }

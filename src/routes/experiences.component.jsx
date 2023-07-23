@@ -26,7 +26,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  border: 1px solid red;
+  // border: 1px solid red;
   max-width: 10px;
   position: relative;
   display: flex;
