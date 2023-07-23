@@ -15,6 +15,10 @@ import netwire from "../images/netwire1.jpeg";
 import osp1 from "../images/OSP1.gif";
 import osp2 from "../images/p2.gif";
 import osp3 from "../images/osp3.gif";
+import cf from "../images/clubfinity.gif";
+import da from "../images/dataannotation.png";
+import nasa from "../images/nasa0.png";
+import avl from "../images/AVL.webp";
 
 export const Bio = {
   name: "Jabir",
@@ -376,8 +380,8 @@ export const projects = [
     image: crwn,
     tags: ["React Js", "Firebase"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Project-Management-App",
-    webapp: "https://vexa-app.netlify.app/",
+    // github: "",
+    // webapp: "",
   },
   {
     id: 2,
@@ -394,9 +398,9 @@ export const projects = [
       "Peepdf",
       "Pdfextract",
     ],
-    category: "machine learning",
-    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
+    category: "malware rev",
+    // github: "",
+    // webapp: "",
     // member: [
     //   {
     //     name: "Rishav Chanda",
@@ -428,7 +432,7 @@ export const projects = [
       "Wireshark",
       "x64 dbg",
     ],
-    category: "android app",
+    category: "malware rev",
     github: "https://github.com/rishavchanda/Buckoid-Android-App",
     webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
   },
@@ -440,9 +444,9 @@ export const projects = [
       "This is an analysis on a malware that drops an executable and steals credentials from the victim machine to exfiltrate to a remote server.",
     image: netwire,
     tags: [, "Procmon", "Regshot", "Remnux", "Ghidra", "Wireshark", "x64 dbg"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
-    webapp: "https://whatsapp-clone-rishav.web.app",
+    category: "malware rev",
+    // github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
+    // webapp: "https://whatsapp-clone-rishav.web.app",
   },
   {
     id: 5,
@@ -452,9 +456,9 @@ export const projects = [
       "Implemented a system call in the kernel along with library functions that allow the call to be invoked from a C API. The system call gets and sets a custom process log level that sits atop the standard Linux kernel’s diagnostic message logging system and allow processes to submit log entries.",
     image: osp1,
     tags: ["Linux", "C", "VMWare"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Todo-Web-App",
-    webapp: "https://rishav-react-todo.netlify.app/",
+    category: "linux",
+    // github: "https://github.com/rishavchanda/Todo-Web-App",
+    // webapp: "https://rishav-react-todo.netlify.app/",
   },
   {
     id: 6,
@@ -464,9 +468,9 @@ export const projects = [
       "Implemented a memory manager in C++, the features of which include initializing, tracking, allocating, and deallocating sections of memory. Integrated the memory manager into a console program and performed testing to ensure that memory is not leaking.",
     image: osp2,
     tags: ["C++", "Valgrind"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Breaking-Bad",
-    webapp: "https://breaking-bad-webapp.netlify.app",
+    category: "linux",
+    // github: "https://github.com/rishavchanda/Breaking-Bad",
+    // webapp: "https://breaking-bad-webapp.netlify.app",
   },
   {
     id: 7,
@@ -476,22 +480,64 @@ export const projects = [
       "Developed a library to read a WAD file and create a directory and file structure. Implemented a userspace daemon using FUSE API to access the directory structure once mounted.",
     image: osp3,
     tags: ["C++", "FUSE API", "Linux"],
-    category: "android app",
-    github: "https://github.com/rishavchanda/Quiz-Earn",
-    webapp: "https://github.com/rishavchanda/Quiz-Earn",
+    category: "linux",
+    // github: "https://github.com/rishavchanda/Quiz-Earn",
+    // webapp: "https://github.com/rishavchanda/Quiz-Earn",
   },
   {
     id: 8,
-    title: "Face Recognition",
-    date: "Jan 2021",
+    title: "Clubfinity",
+    date: "September 2021 to December 2022",
     description:
-      "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
-    image:
-      "https://camo.githubusercontent.com/a8b3e1ebf26d4c95f75bc6671189a3590eb67eb8332d7c7452492990e731efb9/68747470733a2f2f77617265686f7573652d63616d6f2e696e67726573732e636d68312e707366686f737465642e6f72672f356137383335396561323762643261633232336437656662306639303831306437373930383436312f363837343734373037333361326632663633366336663735363432653637363937343638373536323735373336353732363336663665373436353665373432653633366636643266363137333733363537343733326633383339333633363339333232663332333433343333333033333339333832663333333636363330363533333636333032643331333336333632326433313331363533373264333833323335333832643334363433303633333936333635333136353334333133393265363736393636",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+      "Developed the back-end and front-end, using MERN stack, of a cross-platform mobile application, for ios and android. It is a centralized communication and engagement tool for student organizations, where users can follow their favorite clubs and be notified of upcoming events or announcements, and easily discover new groups of interest. The beta version has been released on App Store and Play Store.",
+    image: cf,
+    tags: [
+      "Nodejs",
+      "Expressjs",
+      "React Native",
+      "MongoDB",
+      "Axios",
+      "Mailgun",
+    ],
+    category: "mobile app",
+    // github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+  },
+  {
+    id: 9,
+    title: "Data Annotation",
+    date: "October 2020 to December 2020",
+    description:
+      "Preprocessed wikidata of event based knowledge graphs and developed the backend that creates relation triplets.",
+    image: da,
+    tags: ["Python", "Flask", "Visjs"],
     category: "machine learning",
-    github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-    webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    // github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+  },
+  {
+    id: 10,
+    title: "NASA Mission Control",
+    date: "February 2022",
+    description:
+      "Worked on the backend of this project to learn the fundamentals of Nodejs, Expressjs, and MongoDB.",
+    image: nasa,
+    tags: ["Nodejs", "Expressjs", "Axios", "MongoDB", "Mongoose"],
+    category: "machine learning",
+    // github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+  },
+  {
+    id: 11,
+    title: "AVL Tree",
+    date: "February 2021",
+    description:
+      "Created this AVL tree that stores unique student IDs and non-unique student names. Features include insertion, search, and removal of specific IDs or names.",
+    image: avl,
+    tags: ["Nodejs", "Expressjs", "Axios", "MongoDB", "Mongoose"],
+    category: "machine learning",
+    // github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
   },
 ];
 

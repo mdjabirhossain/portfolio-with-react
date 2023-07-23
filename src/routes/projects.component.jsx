@@ -52,20 +52,20 @@ const Projects = ({ openModal, setOpenModal }) => {
             </ToggleButtonMiddle>
           )}
           <Divider />
-          {toggle === "android app" ? (
+          {toggle === "mobile app" ? (
             <ToggleButtonMiddle
               active
-              value="android app"
-              onClick={() => setToggle("android app")}
+              value="mobile app"
+              onClick={() => setToggle("mobile app")}
             >
-              ANDROID APP'S
+              MOBILE APP'S
             </ToggleButtonMiddle>
           ) : (
             <ToggleButtonMiddle
-              value="android app"
-              onClick={() => setToggle("android app")}
+              value="mobile app"
+              onClick={() => setToggle("mobile app")}
             >
-              ANDROID APP'S
+              MOBILE APP'S
             </ToggleButtonMiddle>
           )}
           <Divider />
