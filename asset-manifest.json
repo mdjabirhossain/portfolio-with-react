@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.288109a5.css",
+    "main.js": "/static/js/main.7ceebf3d.js",
+    "static/media/nasa0.png": "/static/media/nasa0.ee0f9836858b021d5db4.png",
+    "static/media/crwn0.gif": "/static/media/crwn0.53272b4db93203060097.gif",
+    "static/media/maksimilen.jpeg": "/static/media/maksimilen.96cde63dac810af12efd.jpeg",
+    "static/media/Cli-Mate_1.gif": "/static/media/Cli-Mate_1.14e788011e6d1669564e.gif",
+    "static/media/security-image.png": "/static/media/security-image.4dd055484fc43ad8779a.png",
+    "static/media/hc.png": "/static/media/hc.fdfa13652fa3eb67f81f.png",
+    "static/media/software-image.jpeg": "/static/media/software-image.aeecc6ace13df2e09924.jpeg",
+    "static/media/osp3.gif": "/static/media/osp3.38ebad801aea8780ec01.gif",
+    "static/media/dataannotation.png": "/static/media/dataannotation.32adfa78173f69eeac08.png",
+    "static/media/pony1.png": "/static/media/pony1.22094be18c8249ddae48.png",
+    "static/media/clubfinity.png": "/static/media/clubfinity.7e01dc1911ab9c656daa.png",
+    "static/media/p2.gif": "/static/media/p2.1e79432d825b9cfa7ca0.gif",
+    "static/media/pierre.avif": "/static/media/pierre.5496479258df1f225160.avif",
+    "static/media/OSP1.gif": "/static/media/OSP1.d183be664cc94326957d.gif",
+    "static/media/Florida_Hacks_with_IBM.png": "/static/media/Florida_Hacks_with_IBM.05bcbccfe71ec1db4109.png",
+    "static/media/ml-image.jpeg": "/static/media/ml-image.372a0228ae007cbfc17b.jpeg",
+    "static/media/dsr.png": "/static/media/dsr.0623e40a2d45f718ff18.png",
+    "static/media/netwire1.jpeg": "/static/media/netwire1.cee99170970ba49eb3dd.jpeg",
+    "static/media/clubfinity.gif": "/static/media/clubfinity.8541194857cf819b9db9.gif",
+    "static/media/ibb1.png": "/static/media/ibb1.b51c61288aaa06b69bfd.png",
+    "static/media/CB.jpeg": "/static/media/CB.87720f557ab352898a08.jpeg",
+    "static/media/AVL.webp": "/static/media/AVL.06711b86a87ecf3967b1.webp",
+    "static/media/ficsResearch.jpeg": "/static/media/ficsResearch.21240d2dd82e6796676a.jpeg",
+    "index.html": "/index.html",
+    "main.288109a5.css.map": "/static/css/main.288109a5.css.map",
+    "main.7ceebf3d.js.map": "/static/js/main.7ceebf3d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.288109a5.css",
+    "static/js/main.7ceebf3d.js"
+  ]
+}
