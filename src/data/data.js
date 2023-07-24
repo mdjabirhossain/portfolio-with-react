@@ -399,22 +399,6 @@ export const projects = [
       "Pdfextract",
     ],
     category: "malware rev",
-    // github: "",
-    // webapp: "",
-    // member: [
-    //   {
-    //     name: "Rishav Chanda",
-    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    //     github: "https://github.com/rishavchanda/",
-    //   },
-    //   {
-    //     name: "Upasana Chaudhuri",
-    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-    //     github: "https://github.com/upasana0710",
-    //   },
-    // ],
   },
   {
     id: 3,
@@ -433,8 +417,8 @@ export const projects = [
       "x64 dbg",
     ],
     category: "malware rev",
-    github: "https://github.com/rishavchanda/Buckoid-Android-App",
-    webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+    github: "",
+    webapp: "",
   },
   {
     id: 4,
@@ -445,8 +429,8 @@ export const projects = [
     image: netwire,
     tags: [, "Procmon", "Regshot", "Remnux", "Ghidra", "Wireshark", "x64 dbg"],
     category: "malware rev",
-    // github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
-    // webapp: "https://whatsapp-clone-rishav.web.app",
+    github: "",
+    webapp: "",
   },
   {
     id: 5,
@@ -457,8 +441,8 @@ export const projects = [
     image: osp1,
     tags: ["Linux", "C", "VMWare"],
     category: "linux",
-    // github: "https://github.com/rishavchanda/Todo-Web-App",
-    // webapp: "https://rishav-react-todo.netlify.app/",
+    github: "",
+    webapp: "",
   },
   {
     id: 6,
@@ -469,8 +453,8 @@ export const projects = [
     image: osp2,
     tags: ["C++", "Valgrind"],
     category: "linux",
-    // github: "https://github.com/rishavchanda/Breaking-Bad",
-    // webapp: "https://breaking-bad-webapp.netlify.app",
+    github: "",
+    webapp: "",
   },
   {
     id: 7,
@@ -481,8 +465,8 @@ export const projects = [
     image: osp3,
     tags: ["C++", "FUSE API", "Linux"],
     category: "linux",
-    // github: "https://github.com/rishavchanda/Quiz-Earn",
-    // webapp: "https://github.com/rishavchanda/Quiz-Earn",
+    github: "",
+    webapp: "",
   },
   {
     id: 8,
@@ -500,8 +484,8 @@ export const projects = [
       "Mailgun",
     ],
     category: "mobile app",
-    // github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-    // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    github: "",
+    webapp: "",
   },
   {
     id: 9,
@@ -512,8 +496,8 @@ export const projects = [
     image: da,
     tags: ["Python", "Flask", "Visjs"],
     category: "machine learning",
-    // github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-    // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    github: "",
+    webapp: "",
   },
   {
     id: 10,
@@ -524,8 +508,8 @@ export const projects = [
     image: nasa,
     tags: ["Nodejs", "Expressjs", "Axios", "MongoDB", "Mongoose"],
     category: "machine learning",
-    // github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-    // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    github: "",
+    webapp: "",
   },
   {
     id: 11,
@@ -536,8 +520,8 @@ export const projects = [
     image: avl,
     tags: ["Nodejs", "Expressjs", "Axios", "MongoDB", "Mongoose"],
     category: "machine learning",
-    // github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-    // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    github: "",
+    webapp: "",
   },
 ];
 
