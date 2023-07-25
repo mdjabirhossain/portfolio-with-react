@@ -1,8 +1,8 @@
 {
-  "homepage": "http://skywalker-alt327.github.io/",
-  "name": "portfolio-react",
+  "homepage": "http://skywalker-alt327.github.io/portfolio-with-react",
+  "name": "portfolio-with-react",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",

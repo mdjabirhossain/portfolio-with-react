@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { darkTheme, lightTheme } from "./utils/themes.js";
 import NavigationBar from "./navigation/navigation.component";
 import Home from "./routes/home.component";
@@ -36,53 +36,55 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <Routes>
-        <Route path="/" element={<NavigationBar />}>
-          <Route index element={<About />} />
-          <Route
-            path="/about"
-            element={
-              <Body>
-                <About />
-              </Body>
-            }
-          />
-          <Route
-            path="/projects"
-            element={
-              <Body>
-                <Projects openModal={openModal} setOpenModal={setOpenModal} />
-              </Body>
-            }
-          />
-          <Route
-            path="/skills"
-            element={
-              <Body>
-                <Skills />
-              </Body>
-            }
-          />
-          <Route
-            path="/education"
-            element={
-              <Body>
-                <Education />
-              </Body>
-            }
-          />
-          <Route
-            path="/experiences"
-            element={
-              <Body>
-                <Experiences />
-              </Body>
-            }
-          />
-        </Route>
-      </Routes>
-    </ThemeProvider>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+        <Routes>
+          <Route exact path="/" element={<NavigationBar />}>
+            <Route index element={<About />} />
+            <Route
+              path="/about"
+              element={
+                <Body>
+                  <About />
+                </Body>
+              }
+            />
+            <Route
+              path="/projects"
+              element={
+                <Body>
+                  <Projects openModal={openModal} setOpenModal={setOpenModal} />
+                </Body>
+              }
+            />
+            <Route
+              path="/skills"
+              element={
+                <Body>
+                  <Skills />
+                </Body>
+              }
+            />
+            <Route
+              path="/education"
+              element={
+                <Body>
+                  <Education />
+                </Body>
+              }
+            />
+            <Route
+              path="/experiences"
+              element={
+                <Body>
+                  <Experiences />
+                </Body>
+              }
+            />
+          </Route>
+        </Routes>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 };
 
