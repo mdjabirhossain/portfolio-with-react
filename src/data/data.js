@@ -24,7 +24,7 @@ export const Bio = {
   name: "Jabir",
   roles: ["Programmer", "Cybersecurity Enthusiast", "Full Stack Developer"],
   description:
-    "I have a vision to be an entrepreneur and use technologies for market creating innovations. I aspire to identify underlying challenges, eliminate them with technology, and augment the potential for us to achieve more.",
+    "I have a vision to be an entrepreneur and create markets with innovations. I aspire to identify underlying challenges, eliminate them with technologies, and augment our potential to accomplish more prosperity.",
   github: "https://github.com/skywalker-alt327",
   resume:
     "https://github.com/skywalker-alt327/resume/blob/main/Resume_Jabir.pdf",
