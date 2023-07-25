@@ -22,7 +22,7 @@ import avl from "../images/AVL.webp";
 
 export const Bio = {
   name: "Jabir",
-  roles: ["Software Engineer", "Cybersecurity Enthusiast", "Swift Developer"],
+  roles: ["Programmer", "Cybersecurity Enthusiast", "Full Stack Developer"],
   description:
     "I have a vision to be an entrepreneur and use technologies for market creating innovations. I aspire to identify underlying challenges, eliminate them with technology, and augment the potential for us to achieve more.",
   github: "https://github.com/skywalker-alt327",
