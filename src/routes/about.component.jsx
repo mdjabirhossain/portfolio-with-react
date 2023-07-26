@@ -1,7 +1,3 @@
-import aboutimg0 from "../images/maksimilen.jpeg";
-import securityImg from "../images/security-image.png";
-import mlImg from "../images/ml-image.jpeg";
-import softwareImg from "../images/software-image.jpeg";
 import AboutBgAnimation from "../components/aboutBgAnimation.component";
 import { Bio } from "../data/data";
 import Typewriter from "typewriter-effect";

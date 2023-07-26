@@ -27,7 +27,7 @@ export const Bio = {
     "I have a vision to be an entrepreneur and create markets with innovations. I aspire to identify underlying challenges, eliminate them with technologies, and augment our potential to accomplish more prosperity.",
   github: "https://github.com/skywalker-alt327",
   resume:
-    "https://github.com/skywalker-alt327/resume/blob/main/Resume_Jabir.pdf",
+    "https://drive.google.com/file/d/1hodz7jKZ7LAbk-pFEuoP6FkXKFEV25hx/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/md-jabir-hossain-1a5454192/",
   twitter: "https://twitter.com/Hossain_M_J",
 };

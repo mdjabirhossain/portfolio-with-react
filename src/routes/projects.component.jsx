@@ -69,6 +69,23 @@ const Projects = ({ openModal, setOpenModal }) => {
             </ToggleButtonMiddle>
           )}
           <Divider />
+          {toggle === "malware rev" ? (
+            <ToggleButtonMiddle
+              active
+              value="malware rev"
+              onClick={() => setToggle("malware rev")}
+            >
+              MALWARE REV
+            </ToggleButtonMiddle>
+          ) : (
+            <ToggleButtonMiddle
+              value="malware rev"
+              onClick={() => setToggle("malware rev")}
+            >
+              MALWARE REV
+            </ToggleButtonMiddle>
+          )}
+          <Divider />
           {toggle === "machine learning" ? (
             <ToggleButtonRight
               active

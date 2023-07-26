@@ -5,7 +5,6 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
 import SchoolIcon from "@mui/icons-material/School";
 import { education, experiences } from "../data/data";
 import EducationCard from "../components/educationCard/educationCard.component";

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { darkTheme, lightTheme } from "./utils/themes.js";
 import NavigationBar from "./navigation/navigation.component";
-import Home from "./routes/home.component";
 import About from "./routes/about.component";
 import Projects from "./routes/projects.component";
 import Skills from "./routes/skills.component";
