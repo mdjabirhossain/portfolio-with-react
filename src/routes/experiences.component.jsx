@@ -8,7 +8,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import ExperienceCard from "../components/experienceCard/experienceCard.component";
 import { experiences } from "../data/data";
-import { FaBriefcase } from "react-icons/fa6";
+import { BiBriefcaseAlt } from "react-icons/bi";
 
 const Container = styled.div`
   background-color: #121212;
@@ -90,17 +90,19 @@ const Experiences = () => {
           {experiences.map((experience, index) => (
             <TimelineItem>
               <TimelineSeparator>
-                <FaBriefcase variant="outlined" color="#0088ff" />
+                {/* <BiBriefcaseAlt style={{ stroke: "#121212" }} /> */}
                 {index !== experiences.length && (
                   <TimelineConnector
                     style={{
                       // background: "#00aaff",
-                      background: "#0088ff",
-                      width: "1px",
+                      //#0088ff
+                      background: "#121212",
+                      // background: "grey",
+                      width: "0.1px",
                     }}
                   />
                 )}
-                <div>Hello</div>
+                <div style={{ color: "#121212" }}>Hello</div>
               </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <ExperienceCard experience={experience} />
