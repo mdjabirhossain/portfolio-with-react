@@ -39,7 +39,7 @@ const Card = styled.div`
   // width: 100%;
   border-radius: 5px;
   // box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  // box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   // padding: 12px 16px;
   padding: 50px;
   justify-content: space-between;
@@ -52,7 +52,7 @@ const Card = styled.div`
   &:hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
-    background-color: #181818;
+    background-color: #202020;
   }
   @media only screen and (max-width: 768px) {
     padding: 10px;
@@ -71,6 +71,7 @@ const Card = styled.div`
 
   // border: 0.1px solid #306ee8;
   // box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  background-color: #161616;
 `;
 
 const Top = styled.div`
