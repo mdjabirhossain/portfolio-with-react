@@ -1,14 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio-with-react/static/css/main.288109a5.css",
-    "main.js": "/portfolio-with-react/static/js/main.03252651.js",
+    "main.css": "/portfolio-with-react/static/css/main.22949df5.css",
+    "main.js": "/portfolio-with-react/static/js/main.ff7b1d38.js",
     "static/media/nasa0.png": "/portfolio-with-react/static/media/nasa0.ee0f9836858b021d5db4.png",
     "static/media/crwn0.gif": "/portfolio-with-react/static/media/crwn0.53272b4db93203060097.gif",
-    "static/media/maksimilen.jpeg": "/portfolio-with-react/static/media/maksimilen.96cde63dac810af12efd.jpeg",
     "static/media/Cli-Mate_1.gif": "/portfolio-with-react/static/media/Cli-Mate_1.14e788011e6d1669564e.gif",
-    "static/media/security-image.png": "/portfolio-with-react/static/media/security-image.4dd055484fc43ad8779a.png",
     "static/media/hc.png": "/portfolio-with-react/static/media/hc.fdfa13652fa3eb67f81f.png",
-    "static/media/software-image.jpeg": "/portfolio-with-react/static/media/software-image.aeecc6ace13df2e09924.jpeg",
     "static/media/osp3.gif": "/portfolio-with-react/static/media/osp3.38ebad801aea8780ec01.gif",
     "static/media/dataannotation.png": "/portfolio-with-react/static/media/dataannotation.32adfa78173f69eeac08.png",
     "static/media/pony1.png": "/portfolio-with-react/static/media/pony1.22094be18c8249ddae48.png",
@@ -17,7 +14,6 @@
     "static/media/pierre.avif": "/portfolio-with-react/static/media/pierre.5496479258df1f225160.avif",
     "static/media/OSP1.gif": "/portfolio-with-react/static/media/OSP1.d183be664cc94326957d.gif",
     "static/media/Florida_Hacks_with_IBM.png": "/portfolio-with-react/static/media/Florida_Hacks_with_IBM.05bcbccfe71ec1db4109.png",
-    "static/media/ml-image.jpeg": "/portfolio-with-react/static/media/ml-image.372a0228ae007cbfc17b.jpeg",
     "static/media/dsr.png": "/portfolio-with-react/static/media/dsr.0623e40a2d45f718ff18.png",
     "static/media/netwire1.jpeg": "/portfolio-with-react/static/media/netwire1.cee99170970ba49eb3dd.jpeg",
     "static/media/clubfinity.gif": "/portfolio-with-react/static/media/clubfinity.8541194857cf819b9db9.gif",
@@ -26,11 +22,11 @@
     "static/media/AVL.webp": "/portfolio-with-react/static/media/AVL.06711b86a87ecf3967b1.webp",
     "static/media/ficsResearch.jpeg": "/portfolio-with-react/static/media/ficsResearch.21240d2dd82e6796676a.jpeg",
     "index.html": "/portfolio-with-react/index.html",
-    "main.288109a5.css.map": "/portfolio-with-react/static/css/main.288109a5.css.map",
-    "main.03252651.js.map": "/portfolio-with-react/static/js/main.03252651.js.map"
+    "main.22949df5.css.map": "/portfolio-with-react/static/css/main.22949df5.css.map",
+    "main.ff7b1d38.js.map": "/portfolio-with-react/static/js/main.ff7b1d38.js.map"
   },
   "entrypoints": [
-    "static/css/main.288109a5.css",
-    "static/js/main.03252651.js"
+    "static/css/main.22949df5.css",
+    "static/js/main.ff7b1d38.js"
   ]
 }
