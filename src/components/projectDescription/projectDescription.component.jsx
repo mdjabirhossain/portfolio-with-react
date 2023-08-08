@@ -252,7 +252,7 @@ const ProjectDescription = ({ openModal, setOpenModal }) => {
             )}
             {project.category === "linux" && (
               <>
-                <Button href={project?.webapp} target="new">
+                <Button href={project?.github} target="new">
                   View Screen Cast
                 </Button>
               </>

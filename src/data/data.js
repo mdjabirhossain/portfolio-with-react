@@ -449,7 +449,7 @@ export const projects = [
     image: osp1,
     tags: ["Linux", "C", "VMWare"],
     category: "linux",
-    github: "",
+    github: "https://youtu.be/kKJ68ELQzsc",
     webapp: "",
   },
   {
@@ -461,7 +461,7 @@ export const projects = [
     image: osp2,
     tags: ["C++", "Valgrind"],
     category: "linux",
-    github: "",
+    github: "https://youtu.be/gFedV3bGmO0",
     webapp: "",
   },
   {
@@ -473,7 +473,8 @@ export const projects = [
     image: osp3,
     tags: ["C++", "FUSE API", "Linux"],
     category: "linux",
-    github: "",
+    github:
+      "https://www.youtube.com/watch?v=97KZpyPZ4V0&ab_channel=AbigailLopezBonifacio",
     webapp: "",
   },
   {
