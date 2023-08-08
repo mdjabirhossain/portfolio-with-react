@@ -8,6 +8,7 @@ import Projects from "./routes/projects.component";
 import Skills from "./routes/skills.component";
 import Education from "./routes/education.component";
 import Experiences from "./routes/experiences.component.jsx";
+import ProjectDescription from "./components/projectDescription/projectDescription.component.jsx";
 import styled from "styled-components";
 
 const Body = styled.div`
@@ -53,6 +54,12 @@ const App = () => {
               element={
                 <Body>
                   <Projects openModal={openModal} setOpenModal={setOpenModal} />
+                  {openModal.state && (
+                    <ProjectDescription
+                      openModal={openModal}
+                      setOpenModal={setOpenModal}
+                    />
+                  )}
                 </Body>
               }
             />

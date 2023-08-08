@@ -17,6 +17,11 @@ import { projects } from "../data/data";
 
 const Projects = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState("all");
+  const [malware, setMalware] = useState(false);
+  const [webApp, setWebApp] = useState(false);
+  const [mobileApp, setMobileApp] = useState(false);
+  const [machineLearning, setMachineLearning] = useState(false);
+
   return (
     <Container id="projects">
       <Wrapper>
