@@ -380,7 +380,7 @@ export const projects = [
     image: crwn,
     tags: ["React Js", "Firebase"],
     category: "web app",
-    // github: "",
+    github: "https://github.com/skywalker-alt327/crwn-clothing",
     // webapp: "",
   },
   {
@@ -493,7 +493,7 @@ export const projects = [
       "Mailgun",
     ],
     category: "mobile app",
-    github: "",
+    github: "https://gitlab.com/ufsec/clubfinity",
     webapp: "",
   },
   {
@@ -505,8 +505,8 @@ export const projects = [
     image: da,
     tags: ["Python", "Flask", "Visjs"],
     category: "machine learning",
-    github: "",
-    webapp: "",
+    github: "https://github.com/skywalker-alt327/DataAnnotation",
+    webapp: "https://github.com/skywalker-alt327/DataAnnotation",
   },
   {
     id: 10,
@@ -517,8 +517,8 @@ export const projects = [
     image: nasa,
     tags: ["Nodejs", "Expressjs", "Axios", "MongoDB", "Mongoose"],
     category: "machine learning",
-    github: "",
-    webapp: "",
+    github: "https://github.com/skywalker-alt327/nasa-project",
+    webapp: "https://github.com/skywalker-alt327/nasa-project",
   },
   {
     id: 11,

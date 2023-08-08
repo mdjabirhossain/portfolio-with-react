@@ -257,6 +257,20 @@ const ProjectDescription = ({ openModal, setOpenModal }) => {
                 </Button>
               </>
             )}
+            {project.category === "mobile app" && (
+              <>
+                <Button href={project?.github} target="new">
+                  View Source Code
+                </Button>
+              </>
+            )}
+            {project.category === "machine learning" && (
+              <>
+                <Button href={project?.github} target="new">
+                  View Source Code
+                </Button>
+              </>
+            )}
             {/* <Button dull href={project?.github} target="new">
               View Code
             </Button>

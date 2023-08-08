@@ -215,7 +215,8 @@ export const SpacerTop = styled.div`
 `;
 
 export const SpacerBottom = styled.div`
+  position: relative;
   height: 111.375px;
   width: 100%;
-  background: ${({ theme }) => theme.card_light};
+  background: ${({ theme }) => "red"};
 `;
