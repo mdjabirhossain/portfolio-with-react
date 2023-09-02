@@ -50,6 +50,7 @@ export const Span = styled.div`
 export const NavItems = styled.ul`
   width: 100%;
   display: flex;
+  margin-right: 55px;
   align-items: center;
   justify-content: center;
   gap: 32px;
@@ -93,7 +94,7 @@ export const NavLink = styled(Link)`
 `;
 
 export const GitHubButton = styled(Link)`
-  border: 1.8px solid ${({ theme }) => theme.primary};
+  // border: 1.8px solid ${({ theme }) => theme.primary};
   justify-content: center;
   display: flex;
   align-items: center;
@@ -101,7 +102,7 @@ export const GitHubButton = styled(Link)`
   border-radius: 20px;
   // color: ${({ theme }) => theme.primary};
   cursor: pointer;
-  padding: 0 20px;
+  padding: 0 10px;
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
@@ -122,9 +123,9 @@ export const ButtonContainer = styled.div`
     display: none;
   }
   :hover {
-    background: ${({ theme }) => theme.primary};
+    // background: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.white};
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 `;
 
@@ -237,11 +238,11 @@ export const MobileNavLogo = styled(Link)`
 `;
 
 export const ButtonsContainer = styled.div`
+  // border: 1px solid red;
   height: 100%;
   display: flex;
   justify-content: center;
   align items: center;
-  // border: 1px solid white;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: 125px;

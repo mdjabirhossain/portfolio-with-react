@@ -15,10 +15,9 @@ const Button = styled.button`
   transition: all 0.8s ease-in-out;
 `;
 const Card = styled.div`
-  width: 330px;
-  height: 490px;
+  width: 300px;
+  height: 450px;
   // background-color: ${({ theme }) => "#171501"};
-  //background-color: ${({ theme }) => "#161616"};
   background-color: ${({ theme }) => "#161616"};
   cursor: pointer;
   border-radius: 10px;
