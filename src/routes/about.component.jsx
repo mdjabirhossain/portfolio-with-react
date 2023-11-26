@@ -21,38 +21,35 @@ import {
 
 const About = () => {
   return (
-    <div>
-      <AboutContainer>
-        <AboutBg>
-          <AboutBgAnimation />
-        </AboutBg>
-        <AboutInnerContainer>
-          <AboutLeftContainer>
-            <Img src={HeroImg} />
-          </AboutLeftContainer>
-          <AboutRightContainer>
-            <Title>Hi, I am {Bio.name}</Title>
-            <TextLoop>
-              I am a
-              <Span>
-                <Typewriter
-                  options={{
-                    strings: Bio.roles,
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </Span>
-            </TextLoop>
-            <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="display">
-              Resume
-            </ResumeButton>
-          </AboutRightContainer>
-        </AboutInnerContainer>
-      </AboutContainer>
-      <SpacerBottom />
-    </div>
+    <AboutContainer>
+      <AboutBg>
+        <AboutBgAnimation />
+      </AboutBg>
+      <AboutInnerContainer>
+        <AboutLeftContainer>
+          <Img src={HeroImg} />
+        </AboutLeftContainer>
+        <AboutRightContainer>
+          <Title>Hi, I am {Bio.name}</Title>
+          <TextLoop>
+            I am a
+            <Span>
+              <Typewriter
+                options={{
+                  strings: Bio.roles,
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </Span>
+          </TextLoop>
+          <SubTitle>{Bio.description}</SubTitle>
+          <ResumeButton href={Bio.resume} target="display">
+            Resume
+          </ResumeButton>
+        </AboutRightContainer>
+      </AboutInnerContainer>
+    </AboutContainer>
   );
 };
 

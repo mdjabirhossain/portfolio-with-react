@@ -19,12 +19,14 @@ import cf from "../images/clubfinity.gif";
 import da from "../images/dataannotation.png";
 import nasa from "../images/nasa0.png";
 import avl from "../images/AVL.webp";
+import verizon_logo from "../images/Verizon-Logo-Square.png";
+import knn from "../images/knn.png";
 
 export const Bio = {
   name: "Jabir",
-  roles: ["Programmer", "Cybersecurity Enthusiast", "Full Stack Developer"],
+  roles: ["Programmer", "Machine Learning Enthusiast", "Full Stack Developer"],
   description:
-    "I have a vision to be an entrepreneur and create markets with innovations. I aspire to identify underlying challenges, eliminate them with technologies, and augment our potential to accomplish more prosperity.",
+    "I aspire to know what people want and show them what they truly want. I want to create products with technologies and augment our potential to accomplish more prosperity.",
   github: "https://github.com/skywalker-alt327",
   resume:
     "https://drive.google.com/file/d/1hodz7jKZ7LAbk-pFEuoP6FkXKFEV25hx/view?usp=sharing",
@@ -65,6 +67,11 @@ export const skills = [
         name: "Pandas",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg",
+      },
+      {
+        name: "Jupyter Notebook",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg",
       },
 
       // {
@@ -116,6 +123,11 @@ export const skills = [
       {
         name: "Firebase",
         image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+      },
+      {
+        name: "Postman",
+        image:
+          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
       },
     ],
   },
@@ -239,11 +251,7 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
       },
-      {
-        name: "Postman",
-        image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
-      },
+
       // {
       //   name: "Adobe XD",
       //   image:
@@ -261,6 +269,15 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: verizon_logo,
+    role: "Integrated Project and Product Development",
+    company: "Verizon",
+    date: "September 2023 - Present",
+    desc: "Developing an end to end pipeline for AI enabled drone inspection for telecommunication anetennas. Building a computer vision model that takes video frames, detect cell tower antennas and calculate angles to predict tilt and azimuth. Implementing a user interface to display results and 3d model reconstruction.",
+    skills: ["Python", "Tensorflow", "Keras", "Computer Vision"],
+  },
+  {
+    id: 1,
     img: ficsResearch,
     role: "Research Assistant",
     company: "Florida Institute of Cybersecurity",
@@ -269,7 +286,7 @@ export const experiences = [
     skills: ["C++", "Arduino", "Tensorflow"],
   },
   {
-    id: 1,
+    id: 2,
     img: ibb,
     role: "Research Assistant",
     company: "University of Illinois at Urbana Champaign",
@@ -278,16 +295,16 @@ export const experiences = [
     skills: ["Python", "Numpy", "Pandas", "Tensorflow"],
   },
   {
-    id: 2,
+    id: 3,
     img: clubfinity,
-    role: "Tech Lead",
+    role: "Technical Lead",
     company: "Software Engineering Club, University of Florida",
     date: "September 2021 - December 2022",
     desc: "Developed the back-end and front-end, using MERN stack, of a cross-platform mobile application, for ios and android, named Clubfinity, a centralized communication and engagement tool for student organizations. The beta version has been released on App Store and Play Store.",
     skills: ["JavaScript", "Nodejs", "React Native", "MongoDB", "Postman"],
   },
   {
-    id: 3,
+    id: 4,
     img: hack,
     role: "Winner of Florida Hacks with IBM",
     company: "IBM",
@@ -303,7 +320,7 @@ export const experiences = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     img: dsr,
     role: "Research Assistant",
     company: "Data Science Research, University of Florida",
@@ -516,7 +533,7 @@ export const projects = [
       "Worked on the backend of this project to learn the fundamentals of Nodejs, Expressjs, and MongoDB.",
     image: nasa,
     tags: ["Nodejs", "Expressjs", "Axios", "MongoDB", "Mongoose"],
-    category: "machine learning",
+    category: "web app",
     github: "https://github.com/skywalker-alt327/nasa-project",
     webapp: "https://github.com/skywalker-alt327/nasa-project",
   },
@@ -528,16 +545,32 @@ export const projects = [
       "Created this AVL tree that stores unique student IDs and non-unique student names. Features include insertion, search, and removal of specific IDs or names.",
     image: avl,
     tags: ["Nodejs", "Expressjs", "Axios", "MongoDB", "Mongoose"],
-    category: "machine learning",
+    category: "",
     github: "",
     webapp: "",
   },
-];
-
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  {
+    id: 12,
+    title: "K Nearest Neighbors",
+    date: "September 2023",
+    description:
+      "Implemented this unsupervised learning algorithm from scratch using Python and Numpy. Functionalities include fitting a dataset of any dimensions and visualize the clustering predictions.",
+    image: knn,
+    tags: ["Python", "Numpy", "OOP"],
+    category: "machine learning",
+    github: "https://github.com/mdjabirhossain/KMeansClustering.git",
+    webapp: "https://github.com/mdjabirhossain/KMeansClustering.git",
+  },
+  {
+    id: 13,
+    title: "TSNE and KMeans",
+    date: "September 2023",
+    description:
+      "Applied TSNE and KMeans from Scikit Learn and implemented nearest neighbor algorithm. Goal is to find clusters in the data using unsupervised learning and examine how the results compare with the given labels.",
+    image: knn,
+    tags: ["Python", "Numpy", "Scikit Learn", "Matplotlib"],
+    category: "machine learning",
+    github: "https://github.com/mdjabirhossain/TSNE_KMeans_Cifar100.git",
+    webapp: "https://github.com/mdjabirhossain/TSNE_KMeans_Cifar100.git",
+  },
 ];

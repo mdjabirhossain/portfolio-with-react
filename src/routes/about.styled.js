@@ -3,6 +3,7 @@ import _default from "../themes/default";
 
 export const AboutContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
+  overflow: hidden;
   display: flex;
   justify-content: center;
   height: 100%;

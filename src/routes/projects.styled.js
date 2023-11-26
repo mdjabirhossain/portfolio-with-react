@@ -14,6 +14,9 @@ export const Container = styled.div`
   //   // rgba(0, 170, 255, 0.125) 64.83%
   // );
   background: linear-gradient(#121212, #191919);
+  overflow: hidden;
+  // height: 100%;
+  height: 100vh;
   // background: #121212;
   display: flex;
   flex-direction: column;
