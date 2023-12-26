@@ -14,9 +14,11 @@ export const Container = styled.div`
   //   // rgba(0, 170, 255, 0.125) 64.83%
   // );
   background: linear-gradient(#121212, #191919);
+  // background: linear-gradient(#121212, #07293d);
+  // background: linear-gradient(#121212, #041620);
   overflow: hidden;
   // height: 100%;
-  height: 100vh;
+  height: 100%;
   // background: #121212;
   display: flex;
   flex-direction: column;
@@ -67,13 +69,18 @@ export const Desc = styled.div`
 `;
 
 export const ToggleButtonGroup = styled.div`
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   // border: 0.1px solid ${({ theme }) => theme.primary};
-  border: 0.1px solid ${({ theme }) => theme.text_secondary};
+  // border: 0.1px solid ${({ theme }) => theme.text_secondary};
   // color: ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.text_secondary};
+  border-bottom: 1px solid gray;
+  // border-top: 1px solid gray;
   font-size: 16px;
-  border-radius: 6px;
+  // border: 1px solid red;
+  // border-radius: 6px;
   font-weight: 500;
   margin: 22px 0px;
   @media (max-width: 768px) {
@@ -90,9 +97,10 @@ export const ToggleButtonLeft = styled.div`
     `
     // background: ${theme.primary + 50};
     // background: ${theme.text_secondary};
-    background: #71797e;
+    // background: #71797e;
     border-radius: 6px 0px 0px 6px;
     color: ${theme.text_primary};
+    // color: #202020
     `}
   &:hover {
     background: ${({ theme }) => theme.primary + 8};
@@ -105,20 +113,26 @@ export const ToggleButtonLeft = styled.div`
 `;
 
 export const ToggleButtonMiddle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
   padding: 8px 18px;
-  border-radius: 6px;
+  // border-radius: 6px;
   cursor: pointer;
   ${({ active, theme }) =>
     active &&
     `
     // background: ${theme.primary + 50};
     // background: ${theme.text_secondary};
-    background: #71797e;
-    border-radius: 0px;
+    // background: #71797e;
+    background: #00aaff;
+    // border-radius: 5px;
     color: ${theme.text_primary};
     `}
   &:hover {
-    background: ${({ theme }) => theme.primary + 8};
+    // background: ${({ theme }) => theme.primary + 8};
+    color: white;
   }
 
   @media (max-width: 768px) {
@@ -151,9 +165,9 @@ export const ToggleButtonRight = styled.div`
 `;
 
 export const Divider = styled.div`
-  width: 1.5px;
-  // background: ${({ theme }) => theme.primary};
-  background: ${({ theme }) => theme.text_secondary};
+  // width: 1.5px;
+  // // background: ${({ theme }) => theme.primary};
+  // background: ${({ theme }) => theme.text_secondary};
 `;
 
 export const CardContainer = styled.div`

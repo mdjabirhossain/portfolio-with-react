@@ -31,6 +31,7 @@ const Span = styled.span`
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+  color: rgb(220, 220, 220);
 `;
 
 const Card = styled.div`
@@ -48,7 +49,8 @@ const Card = styled.div`
   gap: 12px;
   transition: all 0.3s ease-in-out;
   &:hover {
-    background-color: #181818;
+    // background-color: #181818;
+    // background-color: rgba(0, 50, 100, 0.1);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
   }
@@ -104,7 +106,7 @@ const Name = styled.div`
 const Degree = styled.div`
   font-size: 14px;
   font-weight: 500;
-  color: ${({ theme }) => theme.text_primary + 99};
+  color: ${({ theme }) => theme.text_primary};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
@@ -117,6 +119,7 @@ const Date = styled.div`
   @media only screen and (max-width: 768px) {
     font-size: 10px;
   }
+  color: rgb(200, 200, 200);
 `;
 
 const Grade = styled.div`
@@ -126,6 +129,7 @@ const Grade = styled.div`
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
+  color: rgb(230, 230, 230);
 `;
 
 const EducationCard = ({ education }) => {

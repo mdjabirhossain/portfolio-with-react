@@ -27,17 +27,33 @@ const Projects = ({ openModal, setOpenModal }) => {
       <Wrapper>
         <ToggleButtonGroup>
           {toggle === "all" ? (
-            <ToggleButtonLeft
+            <ToggleButtonMiddle
               active
               value="all"
               onClick={() => setToggle("all")}
             >
               All
-            </ToggleButtonLeft>
+            </ToggleButtonMiddle>
           ) : (
-            <ToggleButtonLeft value="all" onClick={() => setToggle("all")}>
+            <ToggleButtonMiddle value="all" onClick={() => setToggle("all")}>
               All
-            </ToggleButtonLeft>
+            </ToggleButtonMiddle>
+          )}
+          {toggle === "machine learning" ? (
+            <ToggleButtonMiddle
+              active
+              value="machine learning"
+              onClick={() => setToggle("machine learning")}
+            >
+              MACHINE LEARNING
+            </ToggleButtonMiddle>
+          ) : (
+            <ToggleButtonMiddle
+              value="machine learning"
+              onClick={() => setToggle("machine learning")}
+            >
+              MACHINE LEARNING
+            </ToggleButtonMiddle>
           )}
           <Divider />
           {toggle === "web app" ? (
@@ -91,22 +107,6 @@ const Projects = ({ openModal, setOpenModal }) => {
             </ToggleButtonMiddle>
           )}
           <Divider />
-          {toggle === "machine learning" ? (
-            <ToggleButtonRight
-              active
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
-            >
-              MACHINE LEARNING
-            </ToggleButtonRight>
-          ) : (
-            <ToggleButtonRight
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
-            >
-              MACHINE LEARNING
-            </ToggleButtonRight>
-          )}
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === "all" &&

@@ -2,7 +2,7 @@ import React from "react";
 import { Fragment } from "react";
 import { IconContext } from "react-icons";
 import { FaGithub, FaLinkedin, FaTwitter, FaBars } from "react-icons/fa";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, NavLink } from "react-router-dom";
 import { DiCssdeck } from "react-icons/di";
 import { MdModeStandby } from "react-icons/md";
 import { Bio } from "../data/data.js";
@@ -13,7 +13,7 @@ import {
   Span,
   MobileIcon,
   NavItems,
-  NavLink,
+  // NavLink,
   ButtonContainer,
   GitHubButton,
   ButtonsContainer,
@@ -27,6 +27,12 @@ const linkStyle = {
   margin: "1rem",
   textDecoration: "none",
   color: "blue",
+};
+
+const activeStyle = {
+  color: "#ff0000", // Example text color change for the active state
+  fontWeight: 500, // Example font weight change for the active state
+  // Add any other styles you want to apply for the active state
 };
 
 const NavigationBar = () => {
@@ -80,9 +86,9 @@ const NavigationBar = () => {
             />
           </MobileIcon>
           <NavItems>
-            <Link className="nav-link" to="/about">
+            <NavLink className="nav-link" to="/about">
               HOME
-            </Link>
+            </NavLink>
             <Link className="nav-link" to="/education">
               EDUCATION
             </Link>

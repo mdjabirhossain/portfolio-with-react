@@ -6,21 +6,23 @@ import ibb from "../images/ibb1.png";
 import clubfinity from "../images/clubfinity.png";
 import hack from "../images/Florida_Hacks_with_IBM.png";
 import dsr from "../images/dsr.png";
-import climate1 from "../images/Cli-Mate_1.gif";
+import climate1 from "../images/cli-mate.png";
 import CB from "../images/CB.jpeg";
-import crwn from "../images/crwn0.gif";
+import crwn from "../images/crown.png";
 import pierre from "../images/pierre.avif";
 import pony from "../images/pony1.png";
 import netwire from "../images/netwire1.jpeg";
-import osp1 from "../images/OSP1.gif";
-import osp2 from "../images/p2.gif";
-import osp3 from "../images/osp3.gif";
+import osp1 from "../images/p1_os.png";
+import osp2 from "../images/p2_os.png";
+import osp3 from "../images/p3_os.png";
 import cf from "../images/clubfinity.gif";
 import da from "../images/dataannotation.png";
 import nasa from "../images/nasa0.png";
 import avl from "../images/AVL.webp";
 import verizon_logo from "../images/Verizon-Logo-Square.png";
 import knn from "../images/knn.png";
+import tsne_kmeans_cifar100 from "../images/tsne_kmeans_cifar100.png";
+import svd from "../images/svd1.png";
 
 export const Bio = {
   name: "Jabir",
@@ -270,11 +272,11 @@ export const experiences = [
   {
     id: 0,
     img: verizon_logo,
-    role: "Integrated Project and Product Development",
+    role: "Integrated Product and Process Design",
     company: "Verizon",
     date: "September 2023 - Present",
     desc: "Developing an end to end pipeline for AI enabled drone inspection for telecommunication anetennas. Building a computer vision model that takes video frames, detect cell tower antennas and calculate angles to predict tilt and azimuth. Implementing a user interface to display results and 3d model reconstruction.",
-    skills: ["Python", "Tensorflow", "Keras", "Computer Vision"],
+    skills: ["Python", "Tensorflow", "Keras", "OpenCV", "Computer Vision"],
   },
   {
     id: 1,
@@ -335,8 +337,8 @@ export const education = [
     id: 0,
     img: "https://upload.wikimedia.org/wikipedia/commons/e/e0/UF_Monogram.svg",
     school: "University of Florida, Florida, United States",
-    date: "August 2019 - May 2023",
-    grade: "3.81 CGPA",
+    date: "August 2020 - May 2024",
+    grade: "3.82 CGPA",
     desc: "I am pursuing a B.Sc. in Computer Science from Herbert Wertheim College of Engineering and B.A. in Mathematics from the College of Liberal Arts and Sciences.",
     degree:
       "Bachelor of Science - Computer and Information Science and Engineering",
@@ -364,41 +366,39 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Cli-mate",
-    date: "September 2021 - Dec 2021",
+    title: "K Nearest Neighbors",
+    date: "September 2023",
     description:
-      "Cli-Mate is a carbon-emissions tracking app. Users can create profiles to view their to-date carbon savings and calculate their daily savings based on distance walked, bussed, or biked.",
-    image: climate1,
-    tags: ["Node Js", "Express Js", "Vuejs", "MongoDb"],
-    category: "web app",
-    github: "https://github.com/absandell/Cli-Mate",
-    webapp: "",
-    member: [
-      {
-        name: "Md Jabir Hossain",
-        img: CB,
-        linkedin: "https://www.linkedin.com/in/md-jabir-hossain-1a5454192/",
-        github: "https://github.com/skywalker-alt327",
-      },
-      {
-        name: "Andrew Sandell",
-        img: "https://avatars.githubusercontent.com/u/58280054?v=4",
-        linkedin: "https://www.linkedin.com/in/md-jabir-hossain-1a5454192/",
-        github: "https://github.com/skywalker-alt327",
-      },
-    ],
+      "Implemented this unsupervised learning algorithm from scratch using Python and Numpy. Functionalities include fitting a dataset of any dimensions and visualize the clustering predictions.",
+    image: knn,
+    tags: ["Python", "Numpy", "OOP"],
+    category: "machine learning",
+    github: "https://github.com/mdjabirhossain/KMeansClustering.git",
+    webapp: "https://github.com/mdjabirhossain/KMeansClustering.git",
+  },
+  {
+    id: 2,
+    title: "SVD Reduction",
+    date: "September 2023",
+    description:
+      "I used Singular Value Decomposition as a dimensionality reduction tool, and constructed a nearest neighbour classifier in the new space. The dataset is a collection of high-quality images of faces of a groups of people (with repetitions). The resulting classifier assigns a new, unseen photo to a person.",
+    image: svd,
+    tags: ["Python", "Numpy", "Scikit Learn", "Matplotlib"],
+    category: "machine learning",
+    github: "",
+    webapp: "https://github.com/mdjabirhossain/TSNE_KMeans_Cifar100.git",
   },
   {
     id: 1,
-    title: "Crwn Clothing Project",
-    date: "April 2022",
+    title: "TSNE and KMeans",
+    date: "September 2023",
     description:
-      "Built the front end of this e-commerce platform to learn Reactjs fundamentals and apply Firebase.",
-    image: crwn,
-    tags: ["React Js", "Firebase"],
-    category: "web app",
-    github: "https://github.com/skywalker-alt327/crwn-clothing",
-    // webapp: "",
+      "Applied TSNE and KMeans from Scikit Learn and implemented nearest neighbor algorithm. Goal is to find clusters in the data using unsupervised learning and examine how the results compare with the given labels.",
+    image: tsne_kmeans_cifar100,
+    tags: ["Python", "Numpy", "Scikit Learn", "Matplotlib"],
+    category: "machine learning",
+    github: "https://github.com/mdjabirhossain/TSNE_KMeans_Cifar100.git",
+    webapp: "https://github.com/mdjabirhossain/TSNE_KMeans_Cifar100.git",
   },
   {
     id: 2,
@@ -500,7 +500,7 @@ export const projects = [
     date: "September 2021 to December 2022",
     description:
       "Developed the back-end and front-end, using MERN stack, of a cross-platform mobile application, for ios and android. It is a centralized communication and engagement tool for student organizations, where users can follow their favorite clubs and be notified of upcoming events or announcements, and easily discover new groups of interest. The beta version has been released on App Store and Play Store.",
-    image: cf,
+    image: clubfinity,
     tags: [
       "Nodejs",
       "Expressjs",
@@ -549,28 +549,30 @@ export const projects = [
     github: "",
     webapp: "",
   },
+
   {
     id: 12,
-    title: "K Nearest Neighbors",
-    date: "September 2023",
+    title: "Cli-mate",
+    date: "September 2021 - Dec 2021",
     description:
-      "Implemented this unsupervised learning algorithm from scratch using Python and Numpy. Functionalities include fitting a dataset of any dimensions and visualize the clustering predictions.",
-    image: knn,
-    tags: ["Python", "Numpy", "OOP"],
-    category: "machine learning",
-    github: "https://github.com/mdjabirhossain/KMeansClustering.git",
-    webapp: "https://github.com/mdjabirhossain/KMeansClustering.git",
+      "Cli-Mate is a carbon-emissions tracking app. Users can create profiles to view their to-date carbon savings and calculate their daily savings based on distance walked, bussed, or biked.",
+    image: climate1,
+    tags: ["Node Js", "Express Js", "Vuejs", "MongoDb"],
+    category: "web app",
+    github: "https://github.com/absandell/Cli-Mate",
+    webapp: "",
+    member: [],
   },
   {
     id: 13,
-    title: "TSNE and KMeans",
-    date: "September 2023",
+    title: "Crwn Clothing Project",
+    date: "April 2022",
     description:
-      "Applied TSNE and KMeans from Scikit Learn and implemented nearest neighbor algorithm. Goal is to find clusters in the data using unsupervised learning and examine how the results compare with the given labels.",
-    image: knn,
-    tags: ["Python", "Numpy", "Scikit Learn", "Matplotlib"],
-    category: "machine learning",
-    github: "https://github.com/mdjabirhossain/TSNE_KMeans_Cifar100.git",
-    webapp: "https://github.com/mdjabirhossain/TSNE_KMeans_Cifar100.git",
+      "Built the front end of this e-commerce platform to learn Reactjs fundamentals and apply Firebase.",
+    image: crwn,
+    tags: ["React Js", "Firebase"],
+    category: "web app",
+    github: "https://github.com/skywalker-alt327/crwn-clothing",
+    // webapp: "",
   },
 ];

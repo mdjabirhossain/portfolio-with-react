@@ -15,12 +15,14 @@ const Button = styled.button`
   transition: all 0.8s ease-in-out;
 `;
 const Card = styled.div`
-  width: 300px;
-  height: 450px;
+  width: 310px;
+  height: 320px;
   // background-color: ${({ theme }) => "#171501"};
   background-color: ${({ theme }) => "#161616"};
   cursor: pointer;
-  border-radius: 10px;
+  // border: 0.1px solid rgb(29, 161, 242);
+  border-radius: 5px;
+  // box-shadow: 0 0 12px 4px rgba(29, 161, 242, 0.2);
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   padding: 26px 20px;
@@ -29,9 +31,15 @@ const Card = styled.div`
   gap: 14px;
   transition: all 0.5s ease-in-out;
   &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
-    filter: brightness(1.1);
+    // transform: translateY(-10px);
+    // box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
+    transform: scale(1.01);
+    // border: 2px solid rgb(29, 161, 242);
+    // filter: brightness(1.1);
+    // background-color: ${({ theme }) => "rgba(29, 161, 242, 0.1)"};
+    // box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
+    background-color: ${({ theme }) => "rgba(40, 40, 40)"};
+    // box-shadow: 0 0 50px 4px rgba(29, 161, 242, 0.1);
   }
   &:hover ${Button} {
     display: block;
@@ -42,7 +50,7 @@ const Image = styled.img`
   width: 100%;
   height: 180px;
   background-color: ${({ theme }) => theme.white};
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
 `;
 
@@ -74,7 +82,8 @@ const Details = styled.div`
 const Title = styled.div`
   font-size: 20px;
   font-weight: 600;
-  color: ${({ theme }) => "#b5b5b5"};
+  // color: ${({ theme }) => "#b5b5b5"};
+  color: ${({ theme }) => "white"};
   overflow: hidden;
   display: -webkit-box;
   max-width: 100%;
@@ -127,16 +136,16 @@ const ProjectCard = ({ project, setOpenModal }) => {
   return (
     <Card onClick={() => setOpenModal({ state: true, project: project })}>
       <Image src={project.image} />
+      <Details>
+        <Title>{project.title}</Title>
+        {/* <Date>{project.date}</Date> */}
+      </Details>
       <Tags>
         {project.tags?.map((tag, index) => (
           <Tag>{tag}</Tag>
         ))}
       </Tags>
-      <Details>
-        <Title>{project.title}</Title>
-        <Date>{project.date}</Date>
-        <Description>{project.description}</Description>
-      </Details>
+
       <Members>
         {project.member?.map((member) => (
           <Avatar src={member.img} />

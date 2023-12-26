@@ -71,11 +71,15 @@ export const NavItems = styled.ul`
     color: #00aaff;
   }
   // .nav-link: active {
-  //   border-bottom: 2px solid ${({ theme }) => theme.primary};
+  //   /* Styles applied when the link is active (corresponding to the current route) */
+  //   color: #aa00ff; /* Example text color change for the active state */
+  // }
+  // .nav-link: active {
+  //   border-bottom: 2px solid ${({ theme }) => "red"};
   // }
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(NavLink)`
   // color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   color: ${({ theme }) => theme.text_primary};
@@ -86,10 +90,7 @@ export const NavLink = styled(Link)`
   //   color: ${({ theme }) => "red"};
   // }
   &.hover {
-    color: "#00AAFF";
-  }
-  &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.primary};
+    color: "red";
   }
 `;
 
