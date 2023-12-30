@@ -87,19 +87,19 @@ const NavigationBar = () => {
           </MobileIcon>
           <NavItems>
             <NavLink className="nav-link" to="/about">
-              HOME
+              Home
             </NavLink>
             <Link className="nav-link" to="/education">
-              EDUCATION
+              Education
             </Link>
             <Link className="nav-link" to="/experiences">
-              EXPERIENCES
+              Experiences
             </Link>
             <Link className="nav-link" to="/skills">
-              SKILLS
+              Skills
             </Link>
             <Link className="nav-link" to="/projects">
-              PROJECTS
+              Projects
             </Link>
           </NavItems>
 

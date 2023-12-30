@@ -32,11 +32,11 @@ const Projects = ({ openModal, setOpenModal }) => {
               value="all"
               onClick={() => setToggle("all")}
             >
-              ALL
+              All
             </ToggleButtonLeft>
           ) : (
             <ToggleButtonLeft value="all" onClick={() => setToggle("all")}>
-              ALL
+              All
             </ToggleButtonLeft>
           )}
           {toggle === "machine learning" ? (
@@ -45,14 +45,14 @@ const Projects = ({ openModal, setOpenModal }) => {
               value="machine learning"
               onClick={() => setToggle("machine learning")}
             >
-              MACHINE LEARNING
+              Machine Learning
             </ToggleButtonMiddle>
           ) : (
             <ToggleButtonMiddle
               value="machine learning"
               onClick={() => setToggle("machine learning")}
             >
-              MACHINE LEARNING
+              Machine Learning
             </ToggleButtonMiddle>
           )}
           <Divider />
@@ -62,14 +62,14 @@ const Projects = ({ openModal, setOpenModal }) => {
               value="web app"
               onClick={() => setToggle("web app")}
             >
-              WEB APP'S
+              Web Apps
             </ToggleButtonMiddle>
           ) : (
             <ToggleButtonMiddle
               value="web app"
               onClick={() => setToggle("web app")}
             >
-              WEB APP'S
+              Web Apps
             </ToggleButtonMiddle>
           )}
           <Divider />
@@ -79,14 +79,14 @@ const Projects = ({ openModal, setOpenModal }) => {
               value="mobile app"
               onClick={() => setToggle("mobile app")}
             >
-              MOBILE APP'S
+              Mobile Apps
             </ToggleButtonMiddle>
           ) : (
             <ToggleButtonMiddle
               value="mobile app"
               onClick={() => setToggle("mobile app")}
             >
-              MOBILE APP'S
+              Mobile Apps
             </ToggleButtonMiddle>
           )}
           <Divider />
@@ -96,14 +96,14 @@ const Projects = ({ openModal, setOpenModal }) => {
               value="malware rev"
               onClick={() => setToggle("malware rev")}
             >
-              MALWARE REV
+              Malware Rev
             </ToggleButtonMiddle>
           ) : (
             <ToggleButtonMiddle
               value="malware rev"
               onClick={() => setToggle("malware rev")}
             >
-              MALWARE REV
+              Malware Rev
             </ToggleButtonMiddle>
           )}
           <Divider />
