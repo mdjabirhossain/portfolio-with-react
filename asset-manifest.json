@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio-with-react/static/css/main.22949df5.css",
-    "main.js": "/portfolio-with-react/static/js/main.7fdae75e.js",
+    "main.js": "/portfolio-with-react/static/js/main.4093e581.js",
     "static/media/tsne_kmeans_cifar100.png": "/portfolio-with-react/static/media/tsne_kmeans_cifar100.efd87a32455a3a9b69f0.png",
+    "static/media/p1_os.png": "/portfolio-with-react/static/media/p1_os.9f6c97fbcb6696e8ec58.png",
     "static/media/nasa0.png": "/portfolio-with-react/static/media/nasa0.ee0f9836858b021d5db4.png",
-    "static/media/crwn0.gif": "/portfolio-with-react/static/media/crwn0.53272b4db93203060097.gif",
-    "static/media/Cli-Mate_1.gif": "/portfolio-with-react/static/media/Cli-Mate_1.14e788011e6d1669564e.gif",
+    "static/media/p2_os.png": "/portfolio-with-react/static/media/p2_os.ae244a889eb8cb6528ff.png",
+    "static/media/svd1.png": "/portfolio-with-react/static/media/svd1.89c92f26b7acdac3f21c.png",
+    "static/media/crown.png": "/portfolio-with-react/static/media/crown.863c7dc47d508aab246a.png",
+    "static/media/p3_os.png": "/portfolio-with-react/static/media/p3_os.384002b24d471d3faaa1.png",
     "static/media/hc.png": "/portfolio-with-react/static/media/hc.fdfa13652fa3eb67f81f.png",
-    "static/media/osp3.gif": "/portfolio-with-react/static/media/osp3.38ebad801aea8780ec01.gif",
+    "static/media/tl.png": "/portfolio-with-react/static/media/tl.5384048bfa4b26324815.png",
     "static/media/dataannotation.png": "/portfolio-with-react/static/media/dataannotation.32adfa78173f69eeac08.png",
     "static/media/pony1.png": "/portfolio-with-react/static/media/pony1.22094be18c8249ddae48.png",
     "static/media/knn.png": "/portfolio-with-react/static/media/knn.a3eaad591597bce57e28.png",
     "static/media/clubfinity.png": "/portfolio-with-react/static/media/clubfinity.7e01dc1911ab9c656daa.png",
-    "static/media/p2.gif": "/portfolio-with-react/static/media/p2.1e79432d825b9cfa7ca0.gif",
     "static/media/pierre.avif": "/portfolio-with-react/static/media/pierre.5496479258df1f225160.avif",
-    "static/media/OSP1.gif": "/portfolio-with-react/static/media/OSP1.d183be664cc94326957d.gif",
     "static/media/Florida_Hacks_with_IBM.png": "/portfolio-with-react/static/media/Florida_Hacks_with_IBM.05bcbccfe71ec1db4109.png",
+    "static/media/cli-mate.png": "/portfolio-with-react/static/media/cli-mate.9e51eba2db31ab414d0d.png",
     "static/media/dsr.png": "/portfolio-with-react/static/media/dsr.0623e40a2d45f718ff18.png",
     "static/media/netwire1.jpeg": "/portfolio-with-react/static/media/netwire1.cee99170970ba49eb3dd.jpeg",
-    "static/media/clubfinity.gif": "/portfolio-with-react/static/media/clubfinity.8541194857cf819b9db9.gif",
     "static/media/ibb1.png": "/portfolio-with-react/static/media/ibb1.b51c61288aaa06b69bfd.png",
     "static/media/CB.jpeg": "/portfolio-with-react/static/media/CB.87720f557ab352898a08.jpeg",
     "static/media/AVL.webp": "/portfolio-with-react/static/media/AVL.06711b86a87ecf3967b1.webp",
@@ -26,10 +27,10 @@
     "static/media/Verizon-Logo-Square.png": "/portfolio-with-react/static/media/Verizon-Logo-Square.5dd456599c2b811bf10e.png",
     "index.html": "/portfolio-with-react/index.html",
     "main.22949df5.css.map": "/portfolio-with-react/static/css/main.22949df5.css.map",
-    "main.7fdae75e.js.map": "/portfolio-with-react/static/js/main.7fdae75e.js.map"
+    "main.4093e581.js.map": "/portfolio-with-react/static/js/main.4093e581.js.map"
   },
   "entrypoints": [
     "static/css/main.22949df5.css",
-    "static/js/main.7fdae75e.js"
+    "static/js/main.4093e581.js"
   ]
 }
