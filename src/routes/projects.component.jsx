@@ -27,17 +27,17 @@ const Projects = ({ openModal, setOpenModal }) => {
       <Wrapper>
         <ToggleButtonGroup>
           {toggle === "all" ? (
-            <ToggleButtonMiddle
+            <ToggleButtonLeft
               active
               value="all"
               onClick={() => setToggle("all")}
             >
-              All
-            </ToggleButtonMiddle>
+              ALL
+            </ToggleButtonLeft>
           ) : (
-            <ToggleButtonMiddle value="all" onClick={() => setToggle("all")}>
-              All
-            </ToggleButtonMiddle>
+            <ToggleButtonLeft value="all" onClick={() => setToggle("all")}>
+              ALL
+            </ToggleButtonLeft>
           )}
           {toggle === "machine learning" ? (
             <ToggleButtonMiddle

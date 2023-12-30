@@ -39,7 +39,7 @@ const Card = styled.div`
   // width: 100%;
   border-radius: 5px;
   // box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  // box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  box-shadow: rgba(0, 170, 255, 0.1) 0px 4px 4px;
   // padding: 12px 16px;
   padding: 50px;
   justify-content: space-between;

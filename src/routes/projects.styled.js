@@ -17,7 +17,6 @@ export const Container = styled.div`
   // background: linear-gradient(#121212, #07293d);
   // background: linear-gradient(#121212, #041620);
   overflow: hidden;
-  // height: 100%;
   height: 100%;
   // background: #121212;
   display: flex;
@@ -70,13 +69,16 @@ export const Desc = styled.div`
 
 export const ToggleButtonGroup = styled.div`
   width: 100%;
+  padding: 10px 40px;
+  // border: 1px solid red;
   display: flex;
+  // justify-content: center;
   justify-content: space-between;
   // border: 0.1px solid ${({ theme }) => theme.primary};
   // border: 0.1px solid ${({ theme }) => theme.text_secondary};
   // color: ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.text_secondary};
-  border-bottom: 1px solid gray;
+  // border-bottom: 1px solid gray;
   // border-top: 1px solid gray;
   font-size: 16px;
   // border: 1px solid red;
@@ -89,50 +91,70 @@ export const ToggleButtonGroup = styled.div`
 `;
 
 export const ToggleButtonLeft = styled.div`
+  display: flex;
+  justify-content: center;
   padding: 8px 18px;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
+  background: rgb(0, 170, 255, 0.1);
   ${({ active, theme }) =>
     active &&
     `
     // background: ${theme.primary + 50};
     // background: ${theme.text_secondary};
     // background: #71797e;
-    border-radius: 6px 0px 0px 6px;
+    // background: #00aaff;
+    background: rgb(0, 170, 255, 0.75);
+    border-radius: 5px;
     color: ${theme.text_primary};
-    // color: #202020
     `}
   &:hover {
-    background: ${({ theme }) => theme.primary + 8};
+    ${({ active, theme }) =>
+      !active &&
+      // background: ${({ theme }) => theme.primary + 8};
+      `
+    background: rgb(0, 170, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    `}
   }
 
   @media (max-width: 768px) {
     padding: 6px 8px;
     border-radius: 6px;
   }
+
+  width: 230px;
+  margin-right: 8.69999px;
 `;
 
 export const ToggleButtonMiddle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
+  width: 240px;
   padding: 8px 18px;
-  // border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
+  background: rgb(0, 170, 255, 0.1);
   ${({ active, theme }) =>
     active &&
     `
     // background: ${theme.primary + 50};
     // background: ${theme.text_secondary};
     // background: #71797e;
-    background: #00aaff;
+    // background: #00aaff;
+    background: rgb(0, 170, 255, 0.75);
     // border-radius: 5px;
     color: ${theme.text_primary};
     `}
   &:hover {
-    // background: ${({ theme }) => theme.primary + 8};
-    color: white;
+    ${({ active, theme }) =>
+      !active &&
+      // background: ${({ theme }) => theme.primary + 8};
+      `
+      background: rgb(0, 170, 255, 0.5);
+      color: rgba(255, 255, 255, 0.5);
+      `}
   }
 
   @media (max-width: 768px) {

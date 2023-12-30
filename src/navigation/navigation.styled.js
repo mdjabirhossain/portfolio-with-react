@@ -79,7 +79,7 @@ export const NavItems = styled.ul`
   // }
 `;
 
-export const NavLink = styled(NavLink)`
+export const NavLink = styled(Link)`
   // color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   color: ${({ theme }) => theme.text_primary};

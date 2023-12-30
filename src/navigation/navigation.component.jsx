@@ -69,7 +69,7 @@ const NavigationBar = () => {
               style={{
                 display: "flex",
                 alignItems: "center",
-                color: "white",
+                color: "#00aaff",
                 marginBottom: "20;",
                 cursor: "pointer",
               }}

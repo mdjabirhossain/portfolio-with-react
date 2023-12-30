@@ -13,6 +13,7 @@ import styled from "styled-components";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
+  height: 100%;
   width: 100%;
   overflow-x: hidden;
 `;

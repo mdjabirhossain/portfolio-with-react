@@ -15,7 +15,6 @@ import netwire from "../images/netwire1.jpeg";
 import osp1 from "../images/p1_os.png";
 import osp2 from "../images/p2_os.png";
 import osp3 from "../images/p3_os.png";
-import cf from "../images/clubfinity.gif";
 import da from "../images/dataannotation.png";
 import nasa from "../images/nasa0.png";
 import avl from "../images/AVL.webp";
@@ -23,6 +22,7 @@ import verizon_logo from "../images/Verizon-Logo-Square.png";
 import knn from "../images/knn.png";
 import tsne_kmeans_cifar100 from "../images/tsne_kmeans_cifar100.png";
 import svd from "../images/svd1.png";
+import tl from "../images/tl.png";
 
 export const Bio = {
   name: "Jabir",
@@ -378,7 +378,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "SVD Reduction",
+    title: "Reduction with SVD",
     date: "September 2023",
     description:
       "I used Singular Value Decomposition as a dimensionality reduction tool, and constructed a nearest neighbour classifier in the new space. The dataset is a collection of high-quality images of faces of a groups of people (with repetitions). The resulting classifier assigns a new, unseen photo to a person.",
@@ -396,6 +396,18 @@ export const projects = [
       "Applied TSNE and KMeans from Scikit Learn and implemented nearest neighbor algorithm. Goal is to find clusters in the data using unsupervised learning and examine how the results compare with the given labels.",
     image: tsne_kmeans_cifar100,
     tags: ["Python", "Numpy", "Scikit Learn", "Matplotlib"],
+    category: "machine learning",
+    github: "https://github.com/mdjabirhossain/TSNE_KMeans_Cifar100.git",
+    webapp: "https://github.com/mdjabirhossain/TSNE_KMeans_Cifar100.git",
+  },
+  {
+    id: 1,
+    title: "Transfer Learning",
+    date: "September 2023",
+    description:
+      "Used pretrained EfficientNet model and extracted feature vectors of its CNN for the cifar10 dataset. Performed classification on the features using TSNE and obtained well separated clusters for each class.",
+    image: tl,
+    tags: ["Keras", "Python", "Numpy", "Scikit Learn"],
     category: "machine learning",
     github: "https://github.com/mdjabirhossain/TSNE_KMeans_Cifar100.git",
     webapp: "https://github.com/mdjabirhossain/TSNE_KMeans_Cifar100.git",

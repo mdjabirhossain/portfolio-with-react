@@ -69,8 +69,9 @@ export const Skill = styled.div`
   height: 350px;
   background: ${({ theme }) => "#151515"};
   // border: 0.1px solid #854ce6;
-  border: 0.1px solid #00aaff;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  // border: 0.1px solid #00aaff;
+  // box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  box-shadow: rgba(0, 170, 255, 0.15);
   border-radius: 16px;
   padding: 18px 36px;
   @media (max-width: 768px) {
