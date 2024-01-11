@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-with-react/static/css/main.22949df5.css",
-    "main.js": "/portfolio-with-react/static/js/main.651aefd5.js",
+    "main.js": "/portfolio-with-react/static/js/main.a545acae.js",
     "static/media/tsne_kmeans_cifar100.png": "/portfolio-with-react/static/media/tsne_kmeans_cifar100.efd87a32455a3a9b69f0.png",
     "static/media/p1_os.png": "/portfolio-with-react/static/media/p1_os.9f6c97fbcb6696e8ec58.png",
     "static/media/nasa0.png": "/portfolio-with-react/static/media/nasa0.ee0f9836858b021d5db4.png",
@@ -27,10 +27,10 @@
     "static/media/Verizon-Logo-Square.png": "/portfolio-with-react/static/media/Verizon-Logo-Square.5dd456599c2b811bf10e.png",
     "index.html": "/portfolio-with-react/index.html",
     "main.22949df5.css.map": "/portfolio-with-react/static/css/main.22949df5.css.map",
-    "main.651aefd5.js.map": "/portfolio-with-react/static/js/main.651aefd5.js.map"
+    "main.a545acae.js.map": "/portfolio-with-react/static/js/main.a545acae.js.map"
   },
   "entrypoints": [
     "static/css/main.22949df5.css",
-    "static/js/main.651aefd5.js"
+    "static/js/main.a545acae.js"
   ]
 }
