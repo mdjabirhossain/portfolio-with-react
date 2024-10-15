@@ -21,8 +21,8 @@ const Container = styled.div`
   @media (max-width: 960px) {
     padding: 0px;
   }
-  // background: #121212;
-  background: linear-gradient(#121212, #07293d);
+  background: #121212;
+  // background: linear-gradient(#121212, #07293d);
   // background: linear-gradient(#121212, #041620);
 `;
 

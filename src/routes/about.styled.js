@@ -6,12 +6,10 @@ export const AboutContainer = styled.div`
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
   position: relative;
-  top: 0px;
-  left: 0px;
-  padding: 30px;
   @media (max-width: 960px) {
     padding: 66px 16px;
   }
@@ -19,6 +17,7 @@ export const AboutContainer = styled.div`
     padding: 32px 16px;
   }
   z-index: 1;
+  margin-top: -45px;
 `;
 
 export const AboutBg = styled.div`
@@ -103,7 +102,7 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 1px solid rgba(229, 9, 20, 0.1);
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -187,12 +186,17 @@ export const ResumeButton = styled.a`
     font-size: 20px;
     font-weight: 600;
     transition: all 0.2s ease-in-out !important;
-    // background: hsla(271, 100%, 50%, 1);
-    background: hsla(200, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(200, 100%, 50%, 1) 0%, hsla(223, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(200, 100%, 50%, 1) 0%, hsla(223, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(200, 100%, 50%, 1) 0%, hsla(223, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
+    // background: hsla(200, 100%, 50%, 1);
+    // background: linear-gradient(225deg, hsla(200, 100%, 50%, 1) 0%, hsla(223, 100%, 50%, 1) 100%);
+    // background: -moz-linear-gradient(225deg, hsla(200, 100%, 50%, 1) 0%, hsla(223, 100%, 50%, 1) 100%);
+    // background: -webkit-linear-gradient(225deg, hsla(200, 100%, 50%, 1) 0%, hsla(223, 100%, 50%, 1) 100%);
+    // box-shadow:  20px 20px 60px #1F2634,
+    background: #E50914; /* Solid Netflix red background */
+    background: linear-gradient(225deg, #E50914 0%, #8b070e 100%); /* Gradient using Netflix red and a darker shade */
+    background: -moz-linear-gradient(225deg, #E50914 0%, #8b070e 100%); /* Gradient for Mozilla browsers */
+    background: -webkit-linear-gradient(225deg, #E50914 0%, #8b070e 100%); /* Gradient for WebKit-based browsers */
+    box-shadow: 20px 20px 60px #1F2634;
+
     -20px -20px 60px #1F2634;
     &:hover {
         transform: scale(1.05);

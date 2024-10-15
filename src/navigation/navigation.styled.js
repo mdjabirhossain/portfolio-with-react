@@ -55,7 +55,7 @@ export const NavigationContainer = styled.div`
   max-width: 1200px;
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled.div`
   width: 80%;
   padding: 0 6px;
   display: flex;
