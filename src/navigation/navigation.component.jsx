@@ -41,29 +41,6 @@ const NavigationBar = () => {
     <>
       <Navigation>
         <NavigationContainer>
-          {/* <div className="logos-container">
-          <Link to="https://github.com/skywalker-alt327">
-            <IconContext.Provider
-              value={{ className: "logo-container", color: "#171515" }}
-            >
-              <FaGithub />
-            </IconContext.Provider>
-          </Link>
-          <Link to="https://www.linkedin.com/in/md-jabir-hossain-1a5454192/">
-            <IconContext.Provider
-              value={{ className: "logo-container", color: "#0072b1" }}
-            >
-              <FaLinkedin />
-            </IconContext.Provider>
-          </Link>
-          <Link to="https://twitter.com/Hossain_M_J">
-            <IconContext.Provider
-              value={{ className: "logo-container", color: "#1da1f2" }}
-            >
-              <FaTwitter />
-            </IconContext.Provider>
-          </Link>
-        </div> */}
           <NavLogo to="/about">
             <a
               style={{
@@ -86,21 +63,11 @@ const NavigationBar = () => {
             />
           </MobileIcon>
           <NavItems>
-            <NavLink className="nav-link" to="/about">
-              Home
-            </NavLink>
-            <Link className="nav-link" to="/education">
-              Education
-            </Link>
-            <Link className="nav-link" to="/experiences">
-              Experiences
-            </Link>
-            <Link className="nav-link" to="/skills">
-              Skills
-            </Link>
-            <Link className="nav-link" to="/projects">
-              Projects
-            </Link>
+            <StyledLink href="#about">About</StyledLink>
+            <StyledLink href="#experiences">Experiences</StyledLink>
+            <StyledLink href="#projects">Projects</StyledLink>
+            <StyledLink href="#skills">Skills</StyledLink>
+            <StyledLink href="#education">Education</StyledLink>
           </NavItems>
 
           <ButtonsContainer>
@@ -148,5 +115,29 @@ const NavigationBar = () => {
     </>
   );
 };
+
+// const NavigationBar = () => {
+//   return (
+//     <nav>
+//       <ul>
+//         <li>
+//           <a href="#about">About</a>
+//         </li>
+//         <li>
+//           <a href="#projects">Projects</a>
+//         </li>
+//         <li>
+//           <a href="#skills">Skills</a>
+//         </li>
+//         <li>
+//           <a href="#education">Education</a>
+//         </li>
+//         <li>
+//           <a href="#experiences">Experiences</a>
+//         </li>
+//       </ul>
+//     </nav>
+//   );
+// };
 
 export default NavigationBar;

@@ -26,9 +26,13 @@ import tl from "../images/tl.png";
 
 export const Bio = {
   name: "Jabir",
-  roles: ["Programmer", "Machine Learning Enthusiast", "Full Stack Developer"],
+  roles: [
+    "Programmer",
+    "Machine Learning Enthusiast",
+    "Cybersecurity Hobbyist",
+  ],
   description:
-    "I aspire to know what people want and show them what they truly want. I want to create products with technologies and augment our potential to accomplish more prosperity.",
+    "I am an aspiring Computer Scientist, envisioning to create products with technologies that can truly augment our intelligence and potential to accomplish more prosperity.",
   github: "https://github.com/skywalker-alt327",
   resume:
     "https://drive.google.com/file/d/1hodz7jKZ7LAbk-pFEuoP6FkXKFEV25hx/view?usp=sharing",

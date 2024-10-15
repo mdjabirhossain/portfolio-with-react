@@ -1,6 +1,33 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-// import _default from "../../themes/default";
+
+export const StyledLink = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) =>
+    theme.text_primary}; /* Set the color from your theme */
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    color: ${({ theme }) => theme.primary}; /* Change color on hover */
+  }
+
+  &:active {
+    color: ${({ theme }) =>
+      theme.secondary}; /* Color when the link is clicked */
+  }
+
+  @media (max-width: 960px) {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+`;
 
 export const Navigation = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -15,17 +42,16 @@ export const Navigation = styled.div`
   @media (max-width: 960px) {
     trastion: 0.8s all ease;
   }
+  display: flex;
 `;
 
 export const NavigationContainer = styled.div`
-  margin-left: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
   max-width: 1200px;
 `;
 
@@ -50,10 +76,9 @@ export const Span = styled.div`
 export const NavItems = styled.ul`
   width: 100%;
   display: flex;
-  margin-right: 55px;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  // gap: 12px;
   padding: 0 6px;
   list-style: none;
 
@@ -70,6 +95,7 @@ export const NavItems = styled.ul`
   .nav-link:hover {
     color: #00aaff;
   }
+
   // .nav-link: active {
   //   /* Styles applied when the link is active (corresponding to the current route) */
   //   color: #aa00ff; /* Example text color change for the active state */
@@ -79,7 +105,7 @@ export const NavItems = styled.ul`
   // }
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.a`
   // color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   color: ${({ theme }) => theme.text_primary};
@@ -256,9 +282,9 @@ export const ButtonHover = styled.div`
   }
 `;
 
-export const StyledLink = styled.a`
-  color: white;
-  :hover {
-    color: red;
-  }
-`;
+// export const StyledLink = styled.a`
+//   color: white;
+//   :hover {
+//     color: red;
+//   }
+// `;

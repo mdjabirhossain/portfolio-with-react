@@ -6,12 +6,12 @@ export const AboutContainer = styled.div`
   overflow: hidden;
   display: flex;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 0px;
-  padding: 80px 30px;
+  padding: 30px;
   @media (max-width: 960px) {
     padding: 66px 16px;
   }

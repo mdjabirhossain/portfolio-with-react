@@ -13,9 +13,13 @@ import styled from "styled-components";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
-  height: 100%;
+  height: 100vh; /* Full viewport height */
   width: 100%;
-  overflow-x: hidden;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Snap scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  display: flex;
+  flex-direction: column;
 `;
 
 const Wrapper = styled.div`
@@ -36,60 +40,37 @@ const Wrapper = styled.div`
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
+
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-        <Routes>
-          <Route exact path="/" element={<NavigationBar />}>
-            <Route index element={<About />} />
-            <Route
-              path="/about"
-              element={
-                <Body>
-                  <About />
-                </Body>
-              }
-            />
-            <Route
-              path="/projects"
-              element={
-                <Body>
-                  <Projects openModal={openModal} setOpenModal={setOpenModal} />
-                  {openModal.state && (
-                    <ProjectDescription
-                      openModal={openModal}
-                      setOpenModal={setOpenModal}
-                    />
-                  )}
-                </Body>
-              }
-            />
-            <Route
-              path="/skills"
-              element={
-                <Body>
-                  <Skills />
-                </Body>
-              }
-            />
-            <Route
-              path="/education"
-              element={
-                <Body>
-                  <Education />
-                </Body>
-              }
-            />
-            <Route
-              path="/experiences"
-              element={
-                <Body>
-                  <Experiences />
-                </Body>
-              }
-            />
-          </Route>
-        </Routes>
+        <Body>
+          {/* Navigation bar stays at the top */}
+          <NavigationBar />
+
+          {/* Scrollable sections for each component */}
+          <div id="about">
+            <About />
+          </div>
+          <div id="experiences">
+            <Experiences />
+          </div>
+          <div id="projects">
+            <Projects openModal={openModal} setOpenModal={setOpenModal} />
+            {openModal.state && (
+              <ProjectDescription
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
+            )}
+          </div>
+          <div id="skills">
+            <Skills />
+          </div>
+          <div id="education">
+            <Education />
+          </div>
+        </Body>
       </ThemeProvider>
     </BrowserRouter>
   );
