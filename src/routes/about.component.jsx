@@ -32,7 +32,7 @@ const About = () => {
         <AboutRightContainer>
           <Title>Hi, I am {Bio.name}</Title>
           <TextLoop>
-            I am a
+            and I want to be a
             <Span>
               <Typewriter
                 options={{
